@@ -52,9 +52,9 @@ const About = () => {
         <div className="col-span-2 grid gap-5  grid-cols-3 p-5 rounded-xl bg-sky-500 shadow-md">
           <div className="bg-white rounded-md p-3 grow col-span-1 shadow-md">
             <div className="flex items-center border-b-2 pb-5 border-b-slate-300">
-              <div class="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
-              <div class="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
-              <div class="h-3 w-3 rounded-full bg-green-500"></div>
+              <div className="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
+              <div className="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
+              <div className="h-3 w-3 rounded-full bg-green-500"></div>
             </div>
             <div>
               <pre className="text-sm">
