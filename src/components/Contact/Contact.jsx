@@ -10,7 +10,7 @@ import Button from "../Button/Button";
 import Lottie from "lottie-react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import contactAnimation from "../../assets/contact.json";
+import contactAnimation from "../../assets/contact2.json";
 import { Link } from "react-router";
 const Contact = () => {
   return (
@@ -89,67 +89,67 @@ const Contact = () => {
             <form className="space-y-3">
               <div className="flex items-center gap-5">
                 <div className="w-full">
-                  <label class="mb-2 text-sm text-slate-900 font-medium block">
+                  <label className="mb-2 text-sm text-slate-900 font-medium block">
                     Your Name*
                   </label>
-                  <div class="relative flex items-center">
+                  <div className="relative flex items-center">
                     <input
                       type="text"
                       placeholder="Enter name"
-                      class="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
+                      className="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                     />
 
-                    <div class="absolute left-4">
+                    <div className="absolute left-4">
                       <FaUser />
                     </div>
                   </div>
                 </div>
                 <div className="w-full">
-                  <label class="mb-2 text-sm text-slate-900 font-medium block">
+                  <label className="mb-2 text-sm text-slate-900 font-medium block">
                     Email Address*
                   </label>
-                  <div class="relative flex items-center">
+                  <div className="relative flex items-center">
                     <input
                       type="text"
                       placeholder="Enter email address"
-                      class="pr-4 pl-12 py-3 text-xs text-slate-900 rounded-xl bg-white shadow-sm border border-slate-300 w-full outline-none"
+                      className="pr-4 pl-12 py-3 text-xs text-slate-900 rounded-xl bg-white shadow-sm border border-slate-300 w-full outline-none"
                     />
 
-                    <div class="absolute left-4">
+                    <div className="absolute left-4">
                       <MdEmail />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="w-full">
-                <label class="mb-2 text-sm text-slate-900 font-medium block">
+                <label className="mb-2 text-sm text-slate-900 font-medium block">
                   Subject*
                 </label>
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder="What about this?"
-                    class="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
+                    className="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                   />
 
-                  <div class="absolute left-4">
+                  <div className="absolute left-4">
                     <FaBookOpen />
                   </div>
                 </div>
               </div>
 
               <div className="w-full">
-                <label class="mb-2 text-sm text-slate-900 font-medium block">
+                <label className="mb-2 text-sm text-slate-900 font-medium block">
                   Message*
                 </label>
-                <div class="relative flex items-center">
+                <div className="relative flex items-center">
                   <textarea
                     type="text"
                     placeholder="Describe your message"
-                    class="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white  shadow-xs border border-slate-300 w-full outline-none resize-none h-[200px]"
+                    className="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white  shadow-xs border border-slate-300 w-full outline-none resize-none h-[200px]"
                   />
 
-                  <div class="absolute left-4 top-4">
+                  <div className="absolute left-4 top-4">
                     <FaMessage />
                   </div>
                 </div>

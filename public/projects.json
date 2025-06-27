@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "HobbyHub - Event Management",
+    "description": "HobbyHub is a community-driven platform where users can discover, join, and create hobby-based local groups — such as book clubs, hiking crews, painting circles, and more. It fosters social engagement through shared interests and helps people build meaningful connections around their passions.",
+    "stacks": [
+      "Tailwind",
+      "Javascript",
+      "React",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDb"
+    ],
+    "live": "https://hobbyhub-bytahmid.netlify.app/",
+    "github": "https://github.com/tahmid122/hobby-hub",
+    "image": "https://i.ibb.co/Txxyh0mQ/hobbyhub.jpg"
+  },
+  {
+    "id": 2,
+    "title": "PranRokto - Blood Donation Website",
+    "description": "PranRokto is a full-stack blood donor finder application built with the MERN stack. It allows users to search for blood donors by blood group and location, manage donor profiles, post reviews, and connect with others. The app features secure authentication, image uploads via Cloudinary, and a responsive UI.",
+    "stacks": [
+      "Tailwind",
+      "Javascript",
+      "React",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDb"
+    ],
+    "live": "https://pran-rokto.vercel.app/",
+    "github": "https://github.com/tahmid122/Pran-Rokto",
+    "image": "https://i.ibb.co/xtKxMSMJ/pranrokto.jpg"
+  },
+  {
+    "id": 3,
+    "title": "MS Marathon – Marathon Management App",
+    "description": "MS Marathon is a full-stack marathon event management application built with the MERN stack + Firebase Authentication. It allows users to create and manage marathon events, register as participants, view statistics, and interact through a secure and dynamic dashboard.",
+    "stacks": [
+      "Tailwind",
+      "Javascript",
+      "React",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDb"
+    ],
+    "live": "https://ms-marathon.netlify.app/",
+    "github": "https://github.com/tahmid122/ms-marathon",
+    "image": "https://i.ibb.co/FLz4C4jD/Screenshot-27-6-2025-2384-ms-marathon-netlify-app.jpg"
+  }
+]
