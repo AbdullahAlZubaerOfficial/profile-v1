@@ -1,7 +1,7 @@
 import React from "react";
 import image from "/perfect2.png";
 import { Link } from "react-router";
-import { FaFacebook, FaGithub, FaLinkedin, FaVoicemail } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../Button/Button";
 const Banner = () => {
   return (
