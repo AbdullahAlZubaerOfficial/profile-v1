@@ -6,6 +6,7 @@ import { FaArrowUp } from "react-icons/fa";
 import Footer from "../components/Footer/Footer";
 import ClickSpark from "../Animation/ClickSpark";
 import { ModeContext } from "../contexts/ModeContext";
+import AnimatedCursor from "react-animated-cursor";
 const RootLayout = () => {
   const options = {
     // your options here, for example:
@@ -15,6 +16,27 @@ const RootLayout = () => {
   const { mode } = use(ModeContext);
   return (
     <>
+      <AnimatedCursor
+        innerSize={10}
+        outerSize={50}
+        color="255, 68, 0"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={1.5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <div>
         <ClickSpark
           sparkColor={mode === false ? "black" : "white"}

@@ -26,6 +26,7 @@ const About = () => {
     <>
       <Element name="about" className="element">
         <Title title={"About Me"} />
+
         <div className="my-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div
             data-aos="fade-right"

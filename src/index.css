@@ -41,4 +41,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%);
+  color: rgb(255, 68, 0);
 }
+
+/*  */
