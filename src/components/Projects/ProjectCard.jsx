@@ -3,13 +3,13 @@ import Button from "../Button/Button";
 import { Link } from "react-router";
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-white p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]">
+    <div className="bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]">
       <div className="col-span-2 space-y-3 flex flex-col justify-between">
         <div className="flex flex-col gap-3">
           <h3 className="text-2xl font-semibold">{project.title}</h3>
           <p className="text-base">
             {project.description.slice(0, 100)}...
-            <Link to={`/project/${project.id}`} className="text-blue-600">
+            <Link to={`/project/${project.id}`} className="text-purple-800">
               read more
             </Link>
           </p>
@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
             {project?.stacks.map((stack, i) => (
               <span
                 key={i}
-                className="shadow-md bg-white rounded-xl p-2 text-sm"
+                className="shadow-md bg-white rounded-xl p-2 text-sm  text-slate-800"
               >
                 {stack}
               </span>

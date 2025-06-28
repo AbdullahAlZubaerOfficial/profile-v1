@@ -17,7 +17,7 @@ const Banner = () => {
               alt=""
             />
           </div>
-          <div className="col-span-2 space-y-5 pr-10 flex flex-col justify-center">
+          <div className="col-span-2 space-y-5 pr-10 flex flex-col justify-center dark:text-slate-200">
             <h3 className="text-3xl font-semibold">Hi 👋, I'm Tahmid</h3>
             <h1 className="text-4xl lg:text-6xl font-medium">
               Fullstack Developer
@@ -29,20 +29,32 @@ const Banner = () => {
               websites to life, transforming ideas into interactive realities
             </p>
             <div className="flex items-center gap-4">
-              <Link className="border border-slate-300 w-10 h-10 rounded-full flex items-center justify-center">
+              <Link
+                to={"https://www.facebook.com/TahmidAlamJG"}
+                target="_blank"
+                className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+              >
                 <FaFacebook size={23} />
               </Link>
-              <Link className="border border-slate-300 w-10 h-10 rounded-full flex items-center justify-center">
+              <Link
+                to={"https://www.linkedin.com/in/tahmidalam122/"}
+                target="_blank"
+                className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+              >
                 <FaLinkedin size={23} />
               </Link>
-              <Link className="border border-slate-300 w-10 h-10 rounded-full flex items-center justify-center">
+              <Link
+                to={"https://github.com/tahmid122"}
+                target="_blank"
+                className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+              >
                 <FaGithub size={23} />
               </Link>
               <Button text={"Resume"} />
             </div>
           </div>
         </div>
-        <div className="lg:h-[120px] p-3 lg:p-0 mt-3 lg:mt-0 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap">
+        <div className="lg:h-[120px] p-3 lg:p-0 mt-3 lg:mt-0 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap dark:text-slate-200">
           <div className="text-center p-2">
             <span className="text-xl lg:text-2xl font-bold mb-5">6+</span>
             <p className="text-sm lg:text-base">Years of experience</p>

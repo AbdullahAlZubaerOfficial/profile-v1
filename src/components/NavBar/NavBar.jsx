@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Link } from "react-scroll";
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
 import logo from "/logo.jpg";
 import { RiMenuFold2Fill } from "react-icons/ri";
 import { FaXmark } from "react-icons/fa6";
+import { ModeContext } from "../../contexts/ModeContext";
 const NavBar = () => {
+  const { mode, setMode } = use(ModeContext);
   const [isActive, setIsActive] = useState(false);
   const onClose = () => {
     setIsActive(false);
@@ -12,7 +14,7 @@ const NavBar = () => {
 
   return (
     <div className="w-full  lg:h-20 flex items-center justify-center sticky top-0 z-30">
-      <div className="flex gap-4 items-center p-1 lg:p-3 rounded-xl glass shadow-md mt-2 lg:mt-5 border-2 relative">
+      <div className="flex gap-4 items-center p-1 lg:p-3 rounded-xl glass shadow-md mt-2 lg:mt-5 border-2 relative dark:text-slate-200">
         <div className="flex items-center gap-4">
           <Link
             to="home"
@@ -95,9 +97,12 @@ const NavBar = () => {
               Contact
             </Link>
           </li>
-          <li>
-            <IoIosSunny size={25} />
-            {/* <IoIosMoon /> */}
+          <li onClick={() => setMode(!mode)} className="cursor-pointer">
+            {mode === false ? (
+              <IoIosMoon size={25} />
+            ) : (
+              <IoIosSunny size={25} />
+            )}
           </li>
         </ul>
         <span
@@ -109,9 +114,9 @@ const NavBar = () => {
         <div
           className={`absolute center w-[350px] p-5 ${
             isActive ? "translate-x-0" : "-translate-y-[calc(100%+200px)]"
-          } transition-transform duration-700 bg-[#ffffffe6] rounded-xl`}
+          } transition-transform duration-700 bg-[#ffffffe6] dark:bg-slate-700 rounded-xl`}
         >
-          <ul className="flex flex-col  items-center gap-4 font-medium text-base">
+          <ul className="flex flex-col  items-center gap-4 font-medium text-base dark:text-slate-200">
             <li>
               <Link
                 onClick={onClose}
@@ -182,9 +187,18 @@ const NavBar = () => {
                 Contact
               </Link>
             </li>
-            <li>
-              <IoIosSunny size={25} />
-              {/* <IoIosMoon /> */}
+            <li
+              onClick={() => {
+                setMode(!mode);
+                onclose();
+              }}
+              className="cursor-pointer"
+            >
+              {mode === false ? (
+                <IoIosMoon size={25} />
+              ) : (
+                <IoIosSunny size={25} />
+              )}
             </li>
           </ul>
         </div>

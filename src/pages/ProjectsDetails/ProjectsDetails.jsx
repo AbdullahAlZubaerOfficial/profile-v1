@@ -6,7 +6,7 @@ import Button from "../../components/Button/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from "react-router";
 import { animateScroll } from "react-scroll";
-import logo from "/perfect2.png";
+import logo from "/logo.jpg";
 
 const ProjectsDetails = () => {
   const projects = useLoaderData();
@@ -26,14 +26,17 @@ const ProjectsDetails = () => {
               src={logo}
               alt="tahmidImage"
             />
-            <h3 className="text-base font-bold">Tahmid</h3>
-            <Link to="/" className="flex items-center gap-1 text-sm font-bold">
+            {/* <h3 className="text-base font-bold dark:text-slate-200">Tahmid</h3> */}
+            <Link
+              to="/"
+              className="flex items-center gap-1 text-sm font-bold dark:text-slate-200"
+            >
               <FaArrowLeftLong size={25} /> Back
             </Link>
           </div>
         </div>
       </div>
-      <div className="lg:w-11/12 mx-auto p-5">
+      <div className="lg:w-11/12 mx-auto p-5 dark:text-slate-200">
         <Link to="/">
           <FaArrowLeftLong size={25} />
         </Link>
@@ -42,11 +45,11 @@ const ProjectsDetails = () => {
         </div>
 
         <div className="my-10">
-          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-6">
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-6 dark:text-slate-200 dark:border-none">
             <div className="space-y-3">
               <h1 className="text-3xl font-semibold">{project?.title}</h1>
               <p className="text-base">{project?.description}</p>
-              <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center gap-2 flex-wrap dark:text-slate-800">
                 {project?.stacks?.map((stack, i) => (
                   <span
                     key={i}

@@ -27,8 +27,8 @@ const About = () => {
       <Element name="about" className="element">
         <Title title={"About Me"} />
         <div className="my-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-1 rounded-xl p-3 lg:p-5 bg-white shadow-md space-y-3">
-            <div className="flex gap-3 bg-gray-200 p-3 rounded-xl">
+          <div className="lg:col-span-1 rounded-xl p-3 lg:p-5 bg-white shadow-md border border-slate-300 glass space-y-3">
+            <div className="flex gap-3 bg-gray-200 dark:text-slate-200 dark:bg-slate-800 p-3 rounded-xl">
               <img
                 className="h-12 w-12 rounded-full object-cover border-2 border-sky-500"
                 src={image}
@@ -39,7 +39,7 @@ const About = () => {
                 <p className="text-sm font-semibold">Fullstack Developer</p>
               </div>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 dark:text-slate-200">
               <h2 className="text-2xl lg:text-3xl font-semibold">
                 <span className="text-sky-500">Passionate</span> <br />
                 Developer and <br /> Lifelong Learner
@@ -52,7 +52,7 @@ const About = () => {
             </div>
           </div>
           <div className="lg:col-span-2 grid space-y-3 lg:space-y-0 lg:gap-5 grid-cols-1  lg:grid-cols-3 p-3 lg:p-5 rounded-xl glass shadow-md">
-            <div className="bg-white rounded-md p-3  col-span-1 shadow-md">
+            <div className="bg-white dark:text-slate-200 dark:bg-slate-800 rounded-md p-3  col-span-1 shadow-md">
               <div className="flex items-center border-b-2 pb-5 border-b-slate-300">
                 <div className="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
                 <div className="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
@@ -64,7 +64,7 @@ const About = () => {
                 </pre>
               </div>
             </div>
-            <div className="col-span-2 bg-white rounded-xl shadow-md p-5 space-y-3">
+            <div className="col-span-2 bg-white dark:bg-slate-800 gass rounded-xl shadow-md p-5 space-y-3 dark:text-slate-200">
               <h2 className="text-3xl font-semibold">What Drives Me</h2>
               <p className="text-base">
                 A skilled MERN stack web developer. With a passion for creating
@@ -79,37 +79,39 @@ const About = () => {
             </div>
           </div>
           <div className="lg:col-span-2 rounded-xl glass p-3 lg:p-5 shadow-md space-y-3">
-            <h2 className="text-3xl font-semibold">My Tech Stack</h2>
+            <h2 className="text-3xl font-semibold dark:text-slate-200">
+              My Tech Stack
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-5">
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <RiTailwindCssFill size={25} />
                 <span className="font-semibold">Tailwind</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <SiJavascript size={25} />
                 <span className="font-semibold">JavaScript</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <FaReact size={25} />
                 <span className="font-semibold">React.js</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <SiReactrouter size={25} />
-                <span className="font-semibold">React. Routeer</span>
+                <span className="font-semibold">R.Router</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <FaNode size={25} />
                 <span className="font-semibold">Node.js</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <SiExpress size={25} />
                 <span className="font-semibold">Express.js</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <SiMongodb size={25} />
                 <span className="font-semibold">MongoDB</span>
               </div>
-              <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl bg-white shadow-md">
+              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <RiNextjsFill size={25} />
                 <span className="font-semibold">Next.js</span>
               </div>

@@ -11,6 +11,7 @@ const RootLayout = () => {
     duration: 1500,
     smooth: true,
   };
+
   return (
     <>
       <div>
@@ -27,7 +28,7 @@ const RootLayout = () => {
           </div>
           <button
             onClick={() => animateScroll.scrollToTop(options)}
-            className=" fixed right-5 bottom-5 bg-white h-10 w-10 flex items-center justify-center shadow-md rounded-full cursor-pointer"
+            className=" fixed right-5 bottom-5 bg-white border border-slate-300 h-10 w-10 flex items-center justify-center shadow-md rounded-full cursor-pointer"
           >
             <FaArrowUp size={20} />
           </button>
