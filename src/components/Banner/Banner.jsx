@@ -8,18 +8,20 @@ const Banner = () => {
   return (
     <Element name="home" className="element">
       <div>
-        <div className="w-full grid grid-cols-3 ml-10 gap-20">
-          <div className="col-span-1 place-items-end">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 lg:ml-10 space-y-10 lg:space-y-0 lg:gap-20">
+          <div className="col-span-1 place-items-center lg:place-items-end">
             <img
-              className="w-[350px] drop-shadow-2xl drop-shadow-blue-300"
+              className="w-[350px] h-[400px] lg:h-auto mx-auto lg:w-[350px] drop-shadow-2xl drop-shadow-blue-300"
               src={image}
               alt=""
             />
           </div>
           <div className="col-span-2 space-y-5 pr-10 flex flex-col justify-center">
             <h3 className="text-3xl font-semibold">Hi 👋, I'm Tahmid</h3>
-            <h1 className="text-6xl font-medium">Fullstack Developer</h1>
-            <p className="text-lg w-5/6">
+            <h1 className="text-4xl lg:text-6xl font-medium">
+              Fullstack Developer
+            </h1>
+            <p className="text-base lg:text-lg lg:w-5/6">
               Experienced MERN stack developer skilled in Html, CSS, tailwind,
               Javascript, ES6, React Router, React.js, Node.js, Express.js,
               MongoDB With a blend of creativity and technical skills, I bring
@@ -39,22 +41,22 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="h-[120px] glass rounded-xl flex items-center justify-around">
+        <div className="h-[120px] mt-3 lg:mt-0 glass rounded-xl flex items-center justify-around">
           <div className="text-center p-2">
-            <span className="text-2xl font-bold mb-5">6+</span>
-            <p className="">Years of experience</p>
+            <span className="text-xl lg:text-2xl font-bold mb-5">6+</span>
+            <p className="text-sm lg:text-base">Years of experience</p>
           </div>
           <div className="text-center p-2">
-            <span className="text-2xl font-bold mb-5">150+</span>
-            <p className="">Completed projects</p>
+            <span className="text-xl lg:text-2xl font-bold mb-5">150+</span>
+            <p className="text-sm lg:text-base">Completed projects</p>
           </div>
           <div className="text-center p-2">
-            <span className="text-2xl font-bold mb-5">10+</span>
-            <p className=" ">Happy clients</p>
+            <span className="text-xl lg:text-2xl font-bold mb-5">10+</span>
+            <p className=" text-sm lg:text-base">Happy clients</p>
           </div>
           <div className="text-center p-2">
-            <span className="text-2xl font-bold mb-5">0</span>
-            <p className="">Awards</p>
+            <span className="text-xl lg:text-2xl font-bold mb-5">0</span>
+            <p className="text-sm lg:text-base">Awards</p>
           </div>
         </div>
       </div>

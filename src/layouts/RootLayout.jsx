@@ -14,7 +14,7 @@ const RootLayout = () => {
   return (
     <>
       <NavBar />
-      <div className="w-11/12 mx-auto p-5">
+      <div className="lg:w-11/12 mx-auto p-5">
         <Outlet />
       </div>
       <button
