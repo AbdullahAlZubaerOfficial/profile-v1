@@ -20,7 +20,11 @@ const Contact = () => {
         <Title title={"Get In Touch"} />
         <div className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
           <div className="space-y-3 lg:space-y-6">
-            <div className="space-y-3 bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none  p-5 rounded-xl shadow-md">
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              className="space-y-3 bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none  p-5 rounded-xl shadow-md"
+            >
               <h3 className="text-3xl font-semibold ">
                 Let's create something <br /> amazing together!
               </h3>
@@ -29,7 +33,11 @@ const Contact = () => {
                 development inquiries via the form or email.
               </p>
             </div>
-            <div className="dark:text-slate-200 bg-white dark:bg-slate-800 p-3 lg:p-5 rounded-xl shadow-md lg:flex gap-3 lg:gap-5">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="dark:text-slate-200 bg-white dark:bg-slate-800 p-3 lg:p-5 rounded-xl shadow-md lg:flex gap-3 lg:gap-5"
+            >
               <div className="space-y-3">
                 <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
                   <span>
@@ -69,6 +77,8 @@ const Contact = () => {
                   <h3 className="text-2xl font-semibold">Follow Me On</h3>
                   <div className="flex items-center gap-3 lg:gap-4">
                     <Link
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
                       to={"https://www.facebook.com/TahmidAlamJG"}
                       target="_blank"
                       className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
@@ -76,6 +86,8 @@ const Contact = () => {
                       <FaFacebook size={23} />
                     </Link>
                     <Link
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
                       to={"https://www.linkedin.com/in/tahmidalam122/"}
                       target="_blank"
                       className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
@@ -83,6 +95,8 @@ const Contact = () => {
                       <FaLinkedin size={23} />
                     </Link>
                     <Link
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
                       to={"https://github.com/tahmid122"}
                       target="_blank"
                       className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
@@ -95,7 +109,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white border border-slate-300 glass rounded-xl p-3 lg:p-5 shadow-md space-y-3">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="bg-white border border-slate-300 glass rounded-xl p-3 lg:p-5 shadow-md space-y-3"
+          >
             <h3 className="text-3xl font-semibold capitalize dark:text-slate-200">
               Send me a message
             </h3>

@@ -10,14 +10,22 @@ const Banner = () => {
     <Element name="home" className="element">
       <div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 lg:ml-10 space-y-10 lg:space-y-0 lg:gap-20">
-          <div className="col-span-1 place-items-center lg:place-items-end">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="col-span-1 place-items-center lg:place-items-end"
+          >
             <img
               className="w-[350px] h-[400px] lg:h-auto mx-auto lg:w-[350px] drop-shadow-2xl drop-shadow-blue-300"
               src={image}
               alt=""
             />
           </div>
-          <div className="col-span-2 space-y-5 pr-10 flex flex-col justify-center dark:text-slate-200">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="col-span-2 space-y-5 pr-10 flex flex-col justify-center dark:text-slate-200"
+          >
             <h3 className="text-3xl font-semibold">Hi 👋, I'm Tahmid</h3>
             <h1 className="text-4xl lg:text-6xl font-medium">
               Fullstack Developer
@@ -30,6 +38,8 @@ const Banner = () => {
             </p>
             <div className="flex items-center gap-4">
               <Link
+                data-aos="fade-right"
+                data-aos-duration="1000"
                 to={"https://www.facebook.com/TahmidAlamJG"}
                 target="_blank"
                 className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
@@ -37,6 +47,8 @@ const Banner = () => {
                 <FaFacebook size={23} />
               </Link>
               <Link
+                data-aos="fade-down"
+                data-aos-duration="1000"
                 to={"https://www.linkedin.com/in/tahmidalam122/"}
                 target="_blank"
                 className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
@@ -44,6 +56,8 @@ const Banner = () => {
                 <FaLinkedin size={23} />
               </Link>
               <Link
+                data-aos="fade-left"
+                data-aos-duration="1000"
                 to={"https://github.com/tahmid122"}
                 target="_blank"
                 className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
@@ -54,7 +68,11 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="lg:h-[120px] p-3 lg:p-0 mt-3 lg:mt-0 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap dark:text-slate-200">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="lg:h-[120px] p-3 lg:p-0 mt-3 lg:mt-0 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap dark:text-slate-200"
+        >
           <div className="text-center p-2">
             <span className="text-xl lg:text-2xl font-bold mb-5">6+</span>
             <p className="text-sm lg:text-base">Years of experience</p>

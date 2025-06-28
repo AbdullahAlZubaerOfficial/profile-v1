@@ -27,7 +27,11 @@ const About = () => {
       <Element name="about" className="element">
         <Title title={"About Me"} />
         <div className="my-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-1 rounded-xl p-3 lg:p-5 bg-white shadow-md border border-slate-300 glass space-y-3">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="lg:col-span-1 rounded-xl p-3 lg:p-5 bg-white shadow-md border border-slate-300 glass space-y-3"
+          >
             <div className="flex gap-3 bg-gray-200 dark:text-slate-200 dark:bg-slate-800 p-3 rounded-xl">
               <img
                 className="h-12 w-12 rounded-full object-cover border-2 border-sky-500"
@@ -51,7 +55,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="lg:col-span-2 grid space-y-3 lg:space-y-0 lg:gap-5 grid-cols-1  lg:grid-cols-3 p-3 lg:p-5 rounded-xl glass shadow-md">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="lg:col-span-2 grid space-y-3 lg:space-y-0 lg:gap-5 grid-cols-1  lg:grid-cols-3 p-3 lg:p-5 rounded-xl glass shadow-md"
+          >
             <div className="bg-white dark:text-slate-200 dark:bg-slate-800 rounded-md p-3  col-span-1 shadow-md">
               <div className="flex items-center border-b-2 pb-5 border-b-slate-300">
                 <div className="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
@@ -78,7 +86,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="lg:col-span-2 rounded-xl glass p-3 lg:p-5 shadow-md space-y-3">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="lg:col-span-2 rounded-xl glass p-3 lg:p-5 shadow-md space-y-3"
+          >
             <h2 className="text-3xl font-semibold dark:text-slate-200">
               My Tech Stack
             </h2>
@@ -117,7 +129,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-1 rounded-xl bg-purple-800 p-5 shadow-md space-y-5 text-center flex flex-col items-center justify-center">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            className="lg:col-span-1 rounded-xl bg-sky-700 p-5 shadow-md space-y-5 text-center flex flex-col items-center justify-center"
+          >
             <h2 className="text-3xl font-bold text-white">
               I am committed to collaboration and clear communication.
             </h2>

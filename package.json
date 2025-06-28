@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
     "@tsparticles/react": "^3.0.0",
+    "aos": "^2.3.4",
     "lottie-react": "^2.4.1",
     "ogl": "^1.0.11",
     "react": "^19.1.0",

@@ -12,6 +12,8 @@ const Services = () => {
             const { logo, title, desc } = service;
             return (
               <div
+                data-aos="fade-down"
+                data-aos-duration="1000"
                 className="shadow-md bg-white rounded-xl dark:text-slate-200 dark:border-none dark:bg-slate-800"
                 key={index}
               >

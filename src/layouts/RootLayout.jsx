@@ -24,7 +24,7 @@ const RootLayout = () => {
           duration={1000}
         >
           <NavBar />
-          <div className="lg:w-11/12 mx-auto p-3 md:p-5">
+          <div className="lg:w-11/12 mx-auto p-3 md:p-5 overflow-hidden">
             <Outlet />
           </div>
           <button
