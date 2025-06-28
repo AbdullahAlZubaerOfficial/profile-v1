@@ -12,10 +12,10 @@ const Services = () => {
             const { logo, title, desc } = service;
             return (
               <div className="shadow-md bg-white rounded-xl" key={index}>
-                <div className="flex flex-col items-center justify-center gap-5 text-center  w-[400px] p-10">
+                <div className="flex flex-col items-center justify-center gap-5 text-center w-full  lg:w-[400px] p-10">
                   <div>{logo}</div>
                   <h4 className="text-3xl font-semibold">{title}</h4>
-                  <p>{desc}</p>
+                  <p className="text-base">{desc}</p>
                 </div>
               </div>
             );

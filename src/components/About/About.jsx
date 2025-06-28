@@ -26,8 +26,8 @@ const About = () => {
     <>
       <Element name="about" className="element">
         <Title title={"About Me"} />
-        <div className="my-10 grid grid-cols-3 gap-6">
-          <div className="col-span-1 rounded-xl p-5 bg-white shadow-md space-y-3">
+        <div className="my-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-1 rounded-xl p-5 bg-white shadow-md space-y-3">
             <div className="flex gap-3 bg-gray-200 p-3 rounded-xl">
               <img
                 className="h-12 w-12 rounded-full object-cover border-2 border-sky-500"
@@ -40,7 +40,7 @@ const About = () => {
               </div>
             </div>
             <div className="space-y-3">
-              <h2 className="text-3xl font-semibold">
+              <h2 className="text-2xl lg:text-3xl font-semibold">
                 <span className="text-sky-500">Passionate</span> <br />
                 Developer and <br /> Lifelong Learner
               </h2>
@@ -51,8 +51,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-2 grid gap-5  grid-cols-3 p-5 rounded-xl bg-sky-500 shadow-md">
-            <div className="bg-white rounded-md p-3 grow col-span-1 shadow-md">
+          <div className="lg:col-span-2 grid space-y-5 lg:space-y-0 lg:gap-5 grid-cols-1  lg:grid-cols-3 p-5 rounded-xl bg-sky-500 shadow-md">
+            <div className="bg-white rounded-md p-3  col-span-1 shadow-md">
               <div className="flex items-center border-b-2 pb-5 border-b-slate-300">
                 <div className="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
                 <div className="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
@@ -78,7 +78,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-2 rounded-xl bg-white p-5 shadow-md space-y-3">
+          <div className="lg:col-span-2 rounded-xl bg-white p-5 shadow-md space-y-3">
             <h2 className="text-3xl font-semibold">My Tech Stack</h2>
             <div className="grid grid-cols-4 gap-5">
               <div className="flex items-center justify-center gap-2 h-12 px-6 py-2 rounded-xl shadow-md">
@@ -115,7 +115,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-1 rounded-xl bg-purple-800 p-5 shadow-md space-y-5 text-center flex flex-col items-center justify-center">
+          <div className="lg:col-span-1 rounded-xl bg-purple-800 p-5 shadow-md space-y-5 text-center flex flex-col items-center justify-center">
             <h2 className="text-3xl font-bold text-white">
               I am committed to collaboration and clear communication.
             </h2>
