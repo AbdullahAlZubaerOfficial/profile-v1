@@ -10,7 +10,11 @@ const Banner = () => {
       <div>
         <div className="w-full grid grid-cols-3 ml-10 gap-20">
           <div className="col-span-1 place-items-end">
-            <img className="w-[350px]" src={image} alt="" />
+            <img
+              className="w-[350px] drop-shadow-2xl drop-shadow-blue-300"
+              src={image}
+              alt=""
+            />
           </div>
           <div className="col-span-2 space-y-5 pr-10 flex flex-col justify-center">
             <h3 className="text-3xl font-semibold">Hi 👋, I'm Tahmid</h3>
