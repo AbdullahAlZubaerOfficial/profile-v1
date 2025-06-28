@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <Element name="contact" className="element">
         <Title title={"Get In Touch"} />
-        <div className="my-10 grid grid-cols-2 gap-6">
+        <div className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="space-y-6">
             <div className="space-y-3 bg-white p-5 rounded-xl shadow-md">
               <h3 className="text-3xl font-semibold ">
@@ -29,7 +29,7 @@ const Contact = () => {
                 development inquiries via the form or email.
               </p>
             </div>
-            <div className="bg-white p-5   rounded-xl shadow-md flex gap-5">
+            <div className="bg-white p-5 rounded-xl shadow-md lg:flex gap-5">
               <div className="space-y-3">
                 <div className="flex items-center gap-3 p-5 shadow-md rounded-xl">
                   <span>
@@ -89,7 +89,7 @@ const Contact = () => {
             </h3>
             <div>
               <form className="space-y-3">
-                <div className="flex items-center gap-5">
+                <div className="flex lg:flex-row flex-col items-center gap-5">
                   <div className="w-full">
                     <label className="mb-2 text-sm text-slate-900 font-medium block">
                       Your Name*
@@ -98,7 +98,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter name"
-                        className="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
+                        className="pr-4 pl-10 lg:pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                       />
 
                       <div className="absolute left-4">
@@ -114,7 +114,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter email address"
-                        className="pr-4 pl-12 py-3 text-xs text-slate-900 rounded-xl bg-white shadow-sm border border-slate-300 w-full outline-none"
+                        className="pr-4 pl-10 lg:pl-12 py-3 text-xs text-slate-900 rounded-xl bg-white shadow-sm border border-slate-300 w-full outline-none"
                       />
 
                       <div className="absolute left-4">
@@ -131,7 +131,7 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="What about this?"
-                      className="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
+                      className="pr-4 pl-10 lg:pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                     />
 
                     <div className="absolute left-4">
@@ -148,7 +148,7 @@ const Contact = () => {
                     <textarea
                       type="text"
                       placeholder="Describe your message"
-                      className="pr-4 pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white  shadow-xs border border-slate-300 w-full outline-none resize-none h-[200px]"
+                      className="pr-4 pl-10 lg:pl-12 py-3 text-sm text-slate-900 rounded-xl bg-white  shadow-xs border border-slate-300 w-full outline-none resize-none h-[200px]"
                     />
 
                     <div className="absolute left-4 top-4">
