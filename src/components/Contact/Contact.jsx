@@ -16,7 +16,7 @@ import { Element } from "react-scroll";
 const Contact = () => {
   return (
     <>
-      <Element name="contact">
+      <Element name="contact" className="element">
         <Title title={"Get In Touch"} />
         <div className="my-10 grid grid-cols-2 gap-6">
           <div className="space-y-6">

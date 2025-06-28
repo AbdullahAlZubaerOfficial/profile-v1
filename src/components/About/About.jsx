@@ -24,7 +24,7 @@ const About = () => {
     }`;
   return (
     <>
-      <Element name="about">
+      <Element name="about" className="element">
         <Title title={"About Me"} />
         <div className="my-10 grid grid-cols-3 gap-6">
           <div className="col-span-1 rounded-xl p-5 bg-white shadow-md space-y-3">

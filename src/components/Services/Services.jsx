@@ -5,7 +5,7 @@ import { Element } from "react-scroll";
 const Services = () => {
   return (
     <>
-      <Element name="services">
+      <Element name="services" className="element">
         <Title title={"Services"} />
         <div className="my-10 flex items-center justify-center gap-6">
           {serviceData?.map((service, index) => {

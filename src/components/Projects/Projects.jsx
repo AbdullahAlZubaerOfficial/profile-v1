@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = useLoaderData();
   return (
     <>
-      <Element name="projects">
+      <Element name="projects" className="element">
         <Title title={"Projects"} />
         <div className="my-10 grid grid-cols-2 gap-6">
           {projects?.map((project) => (

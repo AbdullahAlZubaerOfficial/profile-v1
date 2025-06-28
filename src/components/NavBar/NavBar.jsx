@@ -18,7 +18,9 @@ const NavBar = () => {
             <Link
               to="home"
               smooth={true}
-              offset={-50}
+              activeClass="active"
+              spy={true}
+              offset={-100}
               duration={1000}
               className="cursor-pointer"
             >
@@ -29,7 +31,8 @@ const NavBar = () => {
             <Link
               to="about"
               offset={-50}
-              activeClass="active"
+              // activeClass="active"
+              spy={true}
               smooth={true}
               duration={1000}
               className="cursor-pointer"
@@ -41,6 +44,8 @@ const NavBar = () => {
             <Link
               to="services"
               smooth={true}
+              activeClass="active"
+              spy={true}
               offset={-50}
               duration={1000}
               className="cursor-pointer"
@@ -52,6 +57,8 @@ const NavBar = () => {
             <Link
               to="projects"
               smooth={true}
+              activeClass="active"
+              spy={true}
               offset={-50}
               duration={1000}
               className="cursor-pointer"
@@ -63,8 +70,10 @@ const NavBar = () => {
             <Link
               to="contact"
               smooth={true}
+              activeClass="active"
+              spy={true}
               duration={1000}
-              offset={-50}
+              offset={-60}
               className="cursor-pointer"
             >
               Contact
