@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 const Slider = ({ images }) => {
-  console.log(images);
   return (
     <>
       <Swiper
@@ -23,14 +22,15 @@ const Slider = ({ images }) => {
         className="mySwiper h-full w-full"
       >
         {images?.map((img, index) => (
-          <div
-            key={index}
-            className="h-full w-full flex items-center justify-center"
-          >
-            <SwiperSlide>
-              <img className="w-full h-full object-contain" src={img} alt="" />
-            </SwiperSlide>
-          </div>
+          <SwiperSlide key={index}>
+            <div className="h-full w-full flex items-center justify-center">
+              <img
+                className="w-full h-full object-cover lg:object-contain"
+                src={img}
+                alt=""
+              />
+            </div>
+          </SwiperSlide>
         ))}
       </Swiper>
     </>

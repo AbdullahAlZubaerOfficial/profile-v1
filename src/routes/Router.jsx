@@ -9,10 +9,10 @@ export const router = createBrowserRouter([
     Component: RootLayout,
     children: [
       { index: true, Component: Home, loader: () => fetch("/projects.json") },
-      {
-        path: "project/:id",
-        Component: ProjectsDetails,
-      },
     ],
+  },
+  {
+    path: "project/:id",
+    Component: ProjectsDetails,
   },
 ]);

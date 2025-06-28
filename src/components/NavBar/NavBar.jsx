@@ -9,6 +9,7 @@ const NavBar = () => {
   const onClose = () => {
     setIsActive(false);
   };
+
   return (
     <div className="w-full  lg:h-20 flex items-center justify-center sticky top-0 z-30">
       <div className="flex gap-4 items-center p-1 lg:p-3 rounded-xl glass shadow-md mt-2 lg:mt-5 border-2 relative">
@@ -98,9 +99,9 @@ const NavBar = () => {
           {isActive ? <FaXmark size={25} /> : <RiMenuFold2Fill size={25} />}
         </span>
         <div
-          className={`absolute center w-[200px] p-5 ${
+          className={`absolute center w-[350px] p-5 ${
             isActive ? "translate-x-0" : "-translate-y-[calc(100%+200px)]"
-          } transition-transform duration-700 glass`}
+          } transition-transform duration-700 bg-[#ffffffe6] rounded-xl`}
         >
           <ul className="flex flex-col  items-center gap-4 font-medium text-base">
             <li>

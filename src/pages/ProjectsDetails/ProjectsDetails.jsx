@@ -9,6 +9,8 @@ import { animateScroll } from "react-scroll";
 const projectsPromise = fetch("../../../public/projects.json").then((res) =>
   res.json()
 );
+import logo from "/perfect2.png";
+
 const ProjectsDetails = () => {
   const projects = use(projectsPromise);
   const { id } = useParams();
@@ -18,72 +20,89 @@ const ProjectsDetails = () => {
   }, []);
   return (
     <>
-      <Link to={-1}>
-        <FaArrowLeftLong size={25} />
-      </Link>
-      <div className="-mt-5">
-        <Title title={"Details"} />
+      <div className="w-full  lg:h-20 flex items-center justify-center sticky top-0 z-30">
+        <div className="flex gap-4 items-center p-1 lg:p-3 rounded-xl glass shadow-md mt-2 lg:mt-5 border-2 relative">
+          <div className="flex items-center gap-4">
+            <img
+              className="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover border-2 border-sky-500"
+              src={logo}
+              alt="tahmidImage"
+            />
+            <h3 className="text-base font-bold">Tahmid</h3>
+            <Link to="/" className="flex items-center gap-1 text-sm font-bold">
+              <FaArrowLeftLong size={25} /> Back
+            </Link>
+          </div>
+        </div>
       </div>
-
-      <div className="my-10">
-        <div className="grid grid-cols-2 gap-6">
-          <div className="space-y-3">
-            <h1 className="text-3xl font-semibold">{project?.title}</h1>
-            <p className="text-base">{project?.description}</p>
-            <div className="flex items-center gap-2 flex-wrap">
-              {project?.stacks?.map((stack, i) => (
-                <span
-                  key={i}
-                  className="shadow-md bg-white rounded-xl p-2 text-sm"
-                >
-                  {stack}
-                </span>
-              ))}
-            </div>
-            <div className="space-x-3 ">
-              <Button
-                text={"Live Link"}
-                link={project?.live}
-                target={"_blank"}
-              />
-              <Button
-                text={"Github"}
-                link={project?.github}
-                target={"_blank"}
-              />
-            </div>
-          </div>
-          <div className="h-[400px] shadow-md">
-            <Slider images={project?.images} />
-          </div>
+      <div className="lg:w-11/12 mx-auto p-5">
+        <Link to="/">
+          <FaArrowLeftLong size={25} />
+        </Link>
+        <div className="-mt-5">
+          <Title title={"Details"} />
         </div>
+
         <div className="my-10">
-          <div className="space-y-3">
-            <h2 className="text-2xl font-semibold">Features:</h2>
-            <ul className="text-lg grid grid-cols-2 gap-2">
-              {project?.features?.map((feature, index) => (
-                <li key={index} className="font-semibold">
-                  {feature?.title}
-                  <ul className="list-disc ml-10 text-base font-normal">
-                    {feature?.points?.map((point, index) => (
-                      <li key={index}>{point}</li>
-                    ))}
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <h1 className="text-3xl font-semibold">{project?.title}</h1>
+              <p className="text-base">{project?.description}</p>
+              <div className="flex items-center gap-2 flex-wrap">
+                {project?.stacks?.map((stack, i) => (
+                  <span
+                    key={i}
+                    className="shadow-md bg-white rounded-xl p-2 text-sm"
+                  >
+                    {stack}
+                  </span>
+                ))}
+              </div>
+              <div className="space-x-3 ">
+                <Button
+                  text={"Live Link"}
+                  link={project?.live}
+                  target={"_blank"}
+                />
+                <Button
+                  text={"Github"}
+                  link={project?.github}
+                  target={"_blank"}
+                />
+              </div>
+            </div>
+            <div className="h-[200px] sm:h-[400px] shadow-md">
+              <Slider images={project?.images} />
+            </div>
+          </div>
+          <div className="my-10">
+            <div className="space-y-3">
+              <h2 className="text-2xl font-semibold">Features:</h2>
+              <ul className="text-lg grid grid-cols-1 lg:grid-cols-2 gap-2">
+                {project?.features?.map((feature, index) => (
+                  <li key={index} className="font-semibold">
+                    {feature?.title}
+                    <ul className="list-disc ml-10 text-base font-normal">
+                      {feature?.points?.map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
 
-                    <li>Google authentication</li>
-                  </ul>
-                </li>
-              ))}
-            </ul>
+                      <li>Google authentication</li>
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
-        <div className="my-10 grid grid-cols-2 gap-2">
-          <div className="space-y-3">
-            <h2 className="text-2xl font-semibold">Challenges:</h2>
-            <p>{project?.challenges}</p>
-          </div>
-          <div className="space-y-3">
-            <h2 className="text-2xl font-semibold">Future Plan:</h2>
-            <p>{project?.futurePlan}</p>
+          <div className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <div className="space-y-3">
+              <h2 className="text-2xl font-semibold">Challenges:</h2>
+              <p>{project?.challenges}</p>
+            </div>
+            <div className="space-y-3">
+              <h2 className="text-2xl font-semibold">Future Plan:</h2>
+              <p>{project?.futurePlan}</p>
+            </div>
           </div>
         </div>
       </div>
