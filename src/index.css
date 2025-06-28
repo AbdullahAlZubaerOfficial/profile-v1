@@ -17,5 +17,14 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 body {
-  background-color: rgba(145, 145, 251, 0.149);
+  /* background-color: rgba(145, 145, 251, 0.149); */
+  background-image: url("https://neyaznafiz.xyz/static/media/hero-bg.e070f34d28af7bf10d15.png");
+
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.active {
+  font-weight: bold;
 }

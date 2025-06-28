@@ -25,17 +25,18 @@ const ProjectCard = ({ project }) => {
         <div className="space-x-3 ">
           <Button text={"Live Link"} link={project.live} target={"_blank"} />
           <Button text={"Github"} link={project.github} target={"_blank"} />
+          <Button text={"Details"} link={`/project/${project.id}`} />
         </div>
       </div>
       <img
-        className="absolute -top-10 right-0 h-[80vh] w-[350px] shadow-md rounded-xl scale-0 group-hover:scale-100 transition-all duration-500 z-20"
-        src={project.image}
+        className="absolute -top-10 right-0 h-[80vh] w-[350px] shadow-md rounded-xl object-cover scale-0 group-hover:scale-100 transition-all duration-500 z-20"
+        src={project.images[0]}
         alt=""
       />
       <div className="w-full h-full overflow-hidden">
         <img
           className="h-full w-full col-span-1 object-cover rounded-xl shadow-md"
-          src={project.image}
+          src={project.images[0]}
           alt=""
         />
       </div>

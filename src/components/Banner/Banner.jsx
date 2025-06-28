@@ -29,7 +29,7 @@ const Banner = () => {
             <Link className="border border-slate-300 w-10 h-10 rounded-full flex items-center justify-center">
               <FaGithub size={23} />
             </Link>
-            <Button text={"Contact Me"} />
+            <Button text={"Resume"} />
           </div>
         </div>
       </div>
