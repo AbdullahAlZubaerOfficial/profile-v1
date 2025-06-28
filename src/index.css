@@ -10,7 +10,6 @@
 .glass {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
@@ -18,14 +17,14 @@
 }
 body {
   /* background-color: rgba(145, 145, 251, 0.149); */
-  background-image: url("https://neyaznafiz.xyz/static/media/hero-bg.e070f34d28af7bf10d15.png");
+  /* background-image: url("https://neyaznafiz.xyz/static/media/hero-bg.e070f34d28af7bf10d15.png");
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .active {
-  color: red;
+  color: #6b21a8;
   font-weight: bold;
 }
 .center {

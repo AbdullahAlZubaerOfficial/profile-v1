@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
-import logo from "/perfect2.png";
+import logo from "/logo.jpg";
 import { RiMenuFold2Fill } from "react-icons/ri";
 import { FaXmark } from "react-icons/fa6";
 const NavBar = () => {
@@ -14,11 +14,19 @@ const NavBar = () => {
     <div className="w-full  lg:h-20 flex items-center justify-center sticky top-0 z-30">
       <div className="flex gap-4 items-center p-1 lg:p-3 rounded-xl glass shadow-md mt-2 lg:mt-5 border-2 relative">
         <div className="flex items-center gap-4">
-          <img
-            className="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover border-2 border-sky-500"
-            src={logo}
-            alt="tahmidImage"
-          />
+          <Link
+            to="home"
+            smooth={true}
+            spy={true}
+            offset={-100}
+            duration={1000}
+          >
+            <img
+              className="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover shadow-md border-slate-500 cursor-pointer"
+              src={logo}
+              alt="tahmidImage"
+            />
+          </Link>
           <h3 className="text-base font-bold lg:hidden">Tahmid</h3>
         </div>
         <ul className="hidden lg:flex items-center gap-4 font-medium text-base">

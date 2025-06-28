@@ -3,13 +3,15 @@ import Button from "../Button/Button";
 import { Link } from "react-router";
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-white p-5 rounded-xl shadow-md gap-5  group relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]">
+    <div className="bg-white p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]">
       <div className="col-span-2 space-y-3 flex flex-col justify-between">
         <div className="flex flex-col gap-3">
           <h3 className="text-2xl font-semibold">{project.title}</h3>
           <p className="text-base">
             {project.description.slice(0, 100)}...
-            <Link className="text-blue-600">read more</Link>
+            <Link to={`/project/${project.id}`} className="text-blue-600">
+              read more
+            </Link>
           </p>
           <div className="flex items-center gap-2 flex-wrap">
             {project?.stacks.map((stack, i) => (

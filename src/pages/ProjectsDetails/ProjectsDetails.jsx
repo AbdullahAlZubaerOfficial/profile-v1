@@ -1,18 +1,16 @@
-import React, { use, useEffect } from "react";
-import { useParams } from "react-router";
+import React, { useEffect } from "react";
+import { useLoaderData, useParams } from "react-router";
 import Title from "../../components/Title/Title";
 import Slider from "./Slider";
 import Button from "../../components/Button/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from "react-router";
 import { animateScroll } from "react-scroll";
-const projectsPromise = fetch("../../../public/projects.json").then((res) =>
-  res.json()
-);
 import logo from "/perfect2.png";
 
 const ProjectsDetails = () => {
-  const projects = use(projectsPromise);
+  const projects = useLoaderData();
+  console.log(projects);
   const { id } = useParams();
   const project = projects.find((pro) => pro.id == id);
   useEffect(() => {

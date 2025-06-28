@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../Button/Button";
 import { Element } from "react-scroll";
+import Particles from "../../Animation/Particles";
 const Banner = () => {
   return (
     <Element name="home" className="element">
@@ -41,7 +42,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="h-[120px] mt-3 lg:mt-0 glass rounded-xl flex items-center justify-around">
+        <div className="lg:h-[120px] p-3 lg:p-0 mt-3 lg:mt-0 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap">
           <div className="text-center p-2">
             <span className="text-xl lg:text-2xl font-bold mb-5">6+</span>
             <p className="text-sm lg:text-base">Years of experience</p>

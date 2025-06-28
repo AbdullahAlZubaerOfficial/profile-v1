@@ -18,8 +18,8 @@ const Contact = () => {
     <>
       <Element name="contact" className="element">
         <Title title={"Get In Touch"} />
-        <div className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="space-y-6">
+        <div className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
+          <div className="space-y-3 lg:space-y-6">
             <div className="space-y-3 bg-white p-5 rounded-xl shadow-md">
               <h3 className="text-3xl font-semibold ">
                 Let's create something <br /> amazing together!
@@ -29,9 +29,9 @@ const Contact = () => {
                 development inquiries via the form or email.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-xl shadow-md lg:flex gap-5">
+            <div className="glass p-3 lg:p-5 rounded-xl shadow-md lg:flex gap-3 lg:gap-5">
               <div className="space-y-3">
-                <div className="flex items-center gap-3 p-5 shadow-md rounded-xl">
+                <div className="flex items-center gap-3 p-5 shadow-md rounded-xl bg-white">
                   <span>
                     <MdEmail size={30} />
                   </span>
@@ -42,7 +42,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-5 shadow-md rounded-xl">
+                <div className="flex items-center gap-3 p-5 shadow-md rounded-xl bg-white">
                   <span>
                     <FaPhone size={30} />
                   </span>
@@ -51,7 +51,7 @@ const Contact = () => {
                     <a href="tel:+8801318195591">+88 01318195591</a>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 p-5 shadow-md rounded-xl">
+                <div className="flex items-center gap-3 p-5 shadow-md rounded-xl bg-white">
                   <span>
                     <FaLocationDot size={30} />
                   </span>
@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-2xl font-semibold">Follow Me On</h3>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-3 lg:gap-4">
                     <Link className="border border-slate-300 w-10 h-10 rounded-full flex items-center justify-center">
                       <FaFacebook size={23} />
                     </Link>
@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl p-5 shadow-md space-y-3">
+          <div className="bg-white rounded-xl p-3 lg:p-5 shadow-md space-y-3">
             <h3 className="text-3xl font-semibold capitalize">
               Send me a message
             </h3>
