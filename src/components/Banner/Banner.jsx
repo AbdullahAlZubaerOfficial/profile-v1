@@ -8,6 +8,10 @@ import { Element } from "react-scroll";
 import facebook from "../../assets/icons/facebook.png";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
+import calander from "../../assets/icons/calander.png";
+import award from "../../assets/icons/award.png";
+import client from "../../assets/icons/client.png";
+import project from "../../assets/icons/project.png";
 const Banner = () => {
   return (
     <Element name="home" className="element">
@@ -85,18 +89,30 @@ const Banner = () => {
           className="lg:h-[120px] p-3 lg:p-0 mt-3 lg:mt-0 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap dark:text-slate-200"
         >
           <div className="text-center p-2">
+            <img
+              className="w-[40px] sm:w-[45px] mx-auto"
+              src={calander}
+              alt=""
+            />
             <span className="text-xl lg:text-2xl font-bold mb-5">6+</span>
             <p className="text-sm lg:text-base">Years of experience</p>
           </div>
           <div className="text-center p-2">
+            <img
+              className="w-[40px] sm:w-[45px] mx-auto"
+              src={project}
+              alt=""
+            />
             <span className="text-xl lg:text-2xl font-bold mb-5">150+</span>
             <p className="text-sm lg:text-base">Completed projects</p>
           </div>
           <div className="text-center p-2">
+            <img className="w-[40px] sm:w-[45px] mx-auto" src={client} alt="" />
             <span className="text-xl lg:text-2xl font-bold mb-5">10+</span>
             <p className=" text-sm lg:text-base">Happy clients</p>
           </div>
           <div className="text-center p-2">
+            <img className="w-[40px] sm:w-[45px] mx-auto" src={award} alt="" />
             <span className="text-xl lg:text-2xl font-bold mb-5">0</span>
             <p className="text-sm lg:text-base">Awards</p>
           </div>
