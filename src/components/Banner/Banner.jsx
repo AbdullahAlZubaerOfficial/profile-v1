@@ -53,7 +53,11 @@ const Banner = () => {
                 target="_blank"
                 className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
               >
-                <img className="w-full h-full" src={facebook} alt="facebook" />
+                <img
+                  className="w-full h-full  hover:scale-110 transition-transform duration-500"
+                  src={facebook}
+                  alt="facebook"
+                />
               </Link>
               <Link
                 data-aos="fade-down"
@@ -62,7 +66,11 @@ const Banner = () => {
                 target="_blank"
                 className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
               >
-                <img className="w-full h-full" src={linkedin} alt="linkedin" />
+                <img
+                  className="w-full h-full hover:scale-110 transition-transform duration-500"
+                  src={linkedin}
+                  alt="linkedin"
+                />
               </Link>
               <Link
                 data-aos="fade-left"
@@ -71,7 +79,11 @@ const Banner = () => {
                 target="_blank"
                 className="border-slate-300 dark:border-slate-500 border-none w-10 h-10 rounded-full flex items-center justify-center bg-white"
               >
-                <img className="w-full h-full" src={github} alt="github" />
+                <img
+                  className="w-full h-full hover:scale-110 transition-transform duration-500"
+                  src={github}
+                  alt="github"
+                />
               </Link>
               <Button
                 text={"Resume"}

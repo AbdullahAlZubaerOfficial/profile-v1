@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
     <div
       data-aos="fade-right"
       data-aos-duration="1000"
-      className="bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]"
+      className="bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group/card relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]"
     >
       <div className="col-span-2 space-y-3 flex flex-col justify-between">
         <div className="flex flex-col gap-3">
@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <img
-        className="absolute bottom-20 lg:bottom-15 xl:bottom-15 right-0 h-[80vh] w-[350px] shadow-md rounded-xl object-cover scale-0 group-hover:scale-100 transition-all duration-1000 z-20"
+        className="absolute bottom-20 lg:bottom-15 xl:bottom-15 right-0 h-[80vh] w-[350px] shadow-md rounded-xl object-cover scale-0 group-hover/card:scale-100 transition-all duration-1000 z-20"
         src={project.images[0]}
         alt=""
       />

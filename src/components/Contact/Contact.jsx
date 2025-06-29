@@ -127,7 +127,7 @@ const Contact = () => {
                       className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >
                       <img
-                        className="w-full h-full"
+                        className="w-full h-full hover:scale-110 transition-transform duration-500r"
                         src={facebook}
                         alt="facebook"
                       />
@@ -140,7 +140,7 @@ const Contact = () => {
                       className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >
                       <img
-                        className="w-full h-full"
+                        className="w-full h-full hover:scale-110 transition-transform duration-500r"
                         src={linkedin}
                         alt="linkedin"
                       />
@@ -153,7 +153,7 @@ const Contact = () => {
                       className="border-slate-300 dark:border-slate-500 border-none w-10 h-10 rounded-full flex items-center justify-center bg-white"
                     >
                       <img
-                        className="w-full h-full"
+                        className="w-full h-full hover:scale-110 transition-transform duration-500r"
                         src={github}
                         alt="github"
                       />

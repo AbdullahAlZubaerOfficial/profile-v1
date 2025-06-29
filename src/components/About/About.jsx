@@ -108,40 +108,40 @@ const About = () => {
               My Tech Stack
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 gap-3 lg:gap-3">
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={tailwind} alt="" />
                 <span className="text-sm">Tailwind</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={javascript} alt="" />
                 <span className="text-sm">Javascript</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={react} alt="" />
                 <span className="text-sm">React</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={firebase} alt="" />
                 <span className="text-sm">Firebase</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={node} alt="" />
                 <span className="text-sm">Node.js</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={express} alt="" />
                 <span className="text-sm">Express.js</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={mongodb} alt="" />
                 <span className="text-sm">Mongodb</span>
               </div>
 
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={git} alt="" />
                 <span className="text-sm">Git</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img
                   className="h-12 w-12 mb-2 bg-white rounded-full"
                   src={github}
@@ -149,7 +149,7 @@ const About = () => {
                 />
                 <span className="text-sm">Github</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img
                   className="h-12 w-12 mb-2 bg-white rounded-full"
                   src={tanstack}
@@ -157,11 +157,11 @@ const About = () => {
                 />
                 <span className="text-sm">T.Query</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={jwt} alt="" />
                 <span className="text-sm">JWT</span>
               </div>
-              <div className="rounded-xl  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+              <div className="rounded-xl hover:scale-105 transition-transform duration-500 dark:hover:shadow-xs dark:hover:shadow-slate-200  p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
                 <img className="h-12 w-12 mb-2" src={figma} alt="" />
                 <span className="text-sm">Figma</span>
               </div>
