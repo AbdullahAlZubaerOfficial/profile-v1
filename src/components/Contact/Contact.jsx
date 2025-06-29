@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Title from "../Title/Title";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
@@ -8,6 +8,7 @@ import { FaBookOpen } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import Button from "../Button/Button";
 import Lottie from "lottie-react";
+import emailjs from "emailjs-com";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import gmail from "../../assets/icons/gmail.png";
 import whatsapp from "../../assets/icons/whatsapp.png";
@@ -18,11 +19,31 @@ import linkedin from "../../assets/icons/linkedin.png";
 import contactAnimation from "../../assets/contact2.json";
 import { Link } from "react-router";
 import { Element } from "react-scroll";
+import toast from "react-hot-toast";
 const Contact = () => {
+  const formRef = useRef();
+  const [isPending, setIsPending] = useState(false);
   const handleEmailSend = (e) => {
     e.preventDefault();
-    console.log("submitted");
-    console.log(e.target);
+    setIsPending(true);
+    emailjs
+      .sendForm(
+        `${import.meta.env.VITE_S_KEY}`, // Replace with your EmailJS Service ID
+        `${import.meta.env.VITE_T_KEY}`, // Replace with your EmailJS Template ID
+        formRef.current,
+        `${import.meta.env.VITE_P_KEY}` // Replace with your EmailJS Public Key
+      )
+      .then(
+        () => {
+          setIsPending(false);
+          toast.success("Email sent");
+
+          formRef.current.reset();
+        },
+        (error) => {
+          toast.error(error.text);
+        }
+      );
   };
   return (
     <>
@@ -152,7 +173,11 @@ const Contact = () => {
               Send me a message
             </h3>
             <div>
-              <form onSubmit={handleEmailSend} className="space-y-3">
+              <form
+                ref={formRef}
+                onSubmit={handleEmailSend}
+                className="space-y-3"
+              >
                 <div className="flex lg:flex-row flex-col items-center gap-5">
                   <div className="w-full">
                     <label className="mb-2 text-sm text-slate-900 dark:text-slate-200 font-medium block">
@@ -161,7 +186,9 @@ const Contact = () => {
                     <div className="relative flex items-center">
                       <input
                         type="text"
+                        name="user_name"
                         placeholder="Enter name"
+                        required
                         className="pr-4 dark:bg-slate-800 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900 dark:text-slate-200 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                       />
 
@@ -177,6 +204,8 @@ const Contact = () => {
                     <div className="relative flex items-center">
                       <input
                         type="text"
+                        name="user_email"
+                        required
                         placeholder="Enter email address"
                         className="pr-4 dark:bg-slate-800 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900 dark:text-slate-200 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                       />
@@ -194,6 +223,8 @@ const Contact = () => {
                   <div className="relative flex items-center">
                     <input
                       type="text"
+                      name="title"
+                      required
                       placeholder="What about this?"
                       className="pr-4 dark:bg-slate-800 dark:text-slate-200 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900  rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
                     />
@@ -211,6 +242,8 @@ const Contact = () => {
                   <div className="relative flex items-center">
                     <textarea
                       type="text"
+                      name="message"
+                      required
                       placeholder="Describe your message"
                       className="pr-4 dark:bg-slate-800 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900 dark:text-slate-200 rounded-xl bg-white  shadow-xs border border-slate-300 w-full outline-none resize-none h-[200px]"
                     />
@@ -223,12 +256,22 @@ const Contact = () => {
                 <div className="w-full text-center">
                   <button
                     type="submit"
-                    className="relative inline-block px-4 py-2 font-medium group"
+                    disabled={isPending}
+                    className={`relative inline-block px-4 py-2 font-medium group ${
+                      isPending ? "cursor-no-drop" : ""
+                    }`}
                   >
                     <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-sky-500 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                     <span className="absolute inset-0 w-full h-full bg-white border-2 border-sky-500 group-hover:bg-sky-500"></span>
                     <span className="relative text-black group-hover:text-white">
-                      Send Message
+                      {isPending ? (
+                        <div>
+                          <span className="loading loading-spinner loading-md mr-2"></span>
+                          Sending...
+                        </div>
+                      ) : (
+                        "Send Message"
+                      )}
                     </span>
                   </button>
                 </div>
