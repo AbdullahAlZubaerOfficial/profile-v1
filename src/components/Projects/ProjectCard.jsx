@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <img
-        className="absolute bottom-20 lg:bottom-15 xl:bottom-15 right-0 h-[80vh] w-[350px] shadow-md rounded-xl object-cover scale-0 group-hover/card:scale-100 transition-all duration-1000 z-20"
+        className="absolute bottom-20 lg:bottom-15 xl:bottom-15 right-0 h-[70vh] w-[350px] shadow-md rounded-xl object-cover scale-0 group-hover/card:scale-100 transition-all duration-1000 z-20"
         src={project.images[0]}
         alt=""
       />

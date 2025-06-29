@@ -42,10 +42,10 @@ const RootLayout = () => {
       <div>
         <ClickSpark
           sparkColor={mode === false ? "black" : "white"}
-          sparkSize={20}
+          sparkSize={30}
           sparkRadius={65}
           sparkCount={8}
-          duration={1000}
+          duration={1500}
         >
           <NavBar />
           <div className="lg:w-11/12 mx-auto p-3 md:p-5 overflow-hidden">
