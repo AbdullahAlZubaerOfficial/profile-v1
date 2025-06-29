@@ -49,7 +49,7 @@ const Contact = () => {
     <>
       <Element name="contact" className="element">
         <Title title={"Get In Touch"} />
-        <div className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
+        <div className="my-15 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
           <div className="space-y-3 lg:space-y-6">
             <div
               data-aos="fade-down"
@@ -127,7 +127,7 @@ const Contact = () => {
                       className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >
                       <img
-                        className="w-full h-full hover:scale-110 transition-transform duration-500r"
+                        className="w-full h-full hover:scale-110 transition-transform duration-500"
                         src={facebook}
                         alt="facebook"
                       />
@@ -140,7 +140,7 @@ const Contact = () => {
                       className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >
                       <img
-                        className="w-full h-full hover:scale-110 transition-transform duration-500r"
+                        className="w-full h-full hover:scale-110 transition-transform duration-500"
                         src={linkedin}
                         alt="linkedin"
                       />
@@ -153,7 +153,7 @@ const Contact = () => {
                       className="border-slate-300 dark:border-slate-500 border-none w-10 h-10 rounded-full flex items-center justify-center bg-white"
                     >
                       <img
-                        className="w-full h-full hover:scale-110 transition-transform duration-500r"
+                        className="w-full h-full hover:scale-110 transition-transform duration-500"
                         src={github}
                         alt="github"
                       />

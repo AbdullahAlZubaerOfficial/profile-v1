@@ -9,7 +9,7 @@ const Services = () => {
     <>
       <Element name="services" className="element">
         <Title title={"Services"} />
-        <div className="my-10 flex items-center lg:flex-row lg:flex-nowrap justify-center flex-wrap gap-3 lg:gap-6">
+        <div className="my-15 flex items-center lg:flex-row lg:flex-nowrap justify-center flex-wrap gap-3 lg:gap-6">
           {serviceData?.map((service, index) => {
             const { logo, title, desc } = service;
 

@@ -6,7 +6,7 @@
 @plugin "daisyui";
 
 * {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .glass {
   /* From https://css.glass */

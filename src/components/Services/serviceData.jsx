@@ -13,7 +13,7 @@ const serviceData = [
       />
     ),
     title: "Web Design",
-    desc: "I design clean, user-focused interfaces that are both visually appealing and functional. My goal is to create engaging digital experiences that enhance usability, accessibility, and brand identity across all devices.",
+    desc: "I design clean, user-focused interfaces that are visually appealing and functional. My goal is to create engaging digital experiences that enhance usability, accessibility, and brand identity across all devices.",
   },
   {
     logo: (
