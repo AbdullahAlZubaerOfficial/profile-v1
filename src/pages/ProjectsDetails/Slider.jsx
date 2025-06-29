@@ -19,7 +19,7 @@ const Slider = ({ images }) => {
           disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
-        className="mySwiper h-full w-full dark:border dark:border-slate-500"
+        className="mySwiper h-full w-full dark:border dark:border-slate-500 rounded-xl"
       >
         {images?.map((img, index) => (
           <SwiperSlide key={index}>

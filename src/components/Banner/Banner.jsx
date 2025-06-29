@@ -33,17 +33,18 @@ const Banner = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
-            className="col-span-2 space-y-5 pr-10 flex flex-col justify-center dark:text-slate-200"
+            className="col-span-2 space-y-5 md:pr-10 flex flex-col justify-center dark:text-slate-200"
           >
             <h3 className="text-3xl font-semibold">Hi 👋, I'm Tahmid</h3>
             <h1 className="text-4xl lg:text-6xl font-medium">
               Fullstack Developer
             </h1>
             <p className="text-base lg:text-lg lg:w-5/6">
-              Experienced MERN stack developer skilled in Html, CSS, tailwind,
-              Javascript, ES6, React Router, React.js, Node.js, Express.js,
-              MongoDB With a blend of creativity and technical skills, I bring
-              websites to life, transforming ideas into interactive realities
+              Experienced MERN stack developer skilled in Tailwind, JavaScript,
+              ES6, React.js, React Router, Node.js, Express.js, and MongoDB.
+              With a blend of creativity and technical expertise, I bring
+              websites to life by transforming ideas into responsive and dynamic
+              web applications.
             </p>
             <div className="flex items-center gap-4">
               <Link

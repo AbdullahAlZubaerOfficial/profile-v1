@@ -62,7 +62,7 @@ const ProjectsDetails = () => {
         </div>
       </div>
       <div className="lg:w-11/12 mx-auto p-5 dark:text-slate-200">
-        <div className="-mt-5">
+        <div className="-mt-15">
           <Title title={"Details"} />
         </div>
 
@@ -109,8 +109,6 @@ const ProjectsDetails = () => {
                       {feature?.points?.map((point, index) => (
                         <li key={index}>{point}</li>
                       ))}
-
-                      <li>Google authentication</li>
                     </ul>
                   </li>
                 ))}

@@ -6,13 +6,13 @@ const ProjectCard = ({ project }) => {
     <div
       data-aos="fade-right"
       data-aos-duration="1000"
-      className="bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group/card relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[350px]"
+      className="bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none p-3 lg:p-5 rounded-xl shadow-md gap-3 lg:gap-5  group/card relative right-0 flex flex-col-reverse lg:grid lg:grid-cols-3 lg:h-[400px] 2xl:h-[350px]"
     >
       <div className="col-span-2 space-y-3 flex flex-col justify-between">
         <div className="flex flex-col gap-3">
           <h3 className="text-2xl font-semibold">{project.title}</h3>
           <p className="text-base">
-            {project.description.slice(0, 160)}...
+            {project.description.slice(0, 170)}...
             <Link to={`/project/${project.id}`} className="text-sky-500">
               read more
             </Link>

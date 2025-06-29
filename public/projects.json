@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "title": "HobbyHub - Group Meetup Platform",
-    "description": "A platform where users can create, join, and manage hobby groups. Includes secure authentication, user-friendly UI, and real-time feedback. A platform where users can create, join, and manage hobby groups. Includes secure authentication, user-friendly UI, and real-time feedback. A platform where users can create, join, and manage hobby groups. Includes secure authentication, user-friendly UI, and real-time feedback.",
+    "title": "HobbyHub –Group Meetup Platform (FullStack)",
+    "description": "HobbyHub is a full-stack social meetup platform where users can create, join, and manage hobby-based groups. Designed with a focus on user experience and scalability, it features a clean UI, secure authentication, dynamic routing, and essential CRUD operations for group and meetup management.",
     "live": "https://hobbyhub-bytahmid.netlify.app/",
-    "github": "https://github.com/tahmid122/hobby-hub",
+    "github": "https://github.com/tahmid122/hobbyhub-client",
     "stacks": [
-      "React.js",
       "Tailwind CSS",
-      "Node.js",
+      "React.js",
+      "Firebase",
       "Express.js",
       "MongoDB",
-      "Firebase"
+      "Firebase Authentication"
     ],
     "images": [
       "https://i.ibb.co/Txxyh0mQ/hobbyhub.jpg",
@@ -27,49 +27,59 @@
     "features": [
       {
         "title": "🔐 Authentication System",
-        "points": ["Email & Password authentication", "Google authentication"]
+        "points": [
+          "FirebaseToken -based authentication",
+          "Login and protected route support"
+        ]
       },
       {
         "title": "🧭 Routing",
-        "points": ["Dynamic Routing", "Private & Conditional Routes"]
+        "points": [
+          "Dynamic routes for group and meetup pages",
+          "Private routing for user dashboards"
+        ]
       },
       {
         "title": "🎨 User Interface",
         "points": [
           "Light/Dark Mode toggle",
-          "Responsive and clean design",
-          "Smooth animations and visual transitions"
+          "Modern and responsive layout with Tailwind CSS",
+          "Interactive elements"
         ]
       },
       {
         "title": "📦 Core Functionality",
         "points": [
-          "Full CRUD operations for group management (Create, Read, Update, Delete)",
-          "Real-time feedback with toast notifications",
-          "Protected dashboard and pages"
+          "Full CRUD for group creation and membership",
+          "User can join/leave groups and view meetup schedules",
+          "Toast notifications for actions and feedback"
         ]
       },
       {
         "title": "🛠️ Utilities",
-        "points": ["Loading indicators", "Error handling", "Form validations"]
+        "points": [
+          "Loading and error handling states",
+          "Form validation and alerts",
+          "Reusable component structure"
+        ]
       }
     ],
-    "challenges": "Integrating conditional routing based on user roles was complex. Also, ensuring responsive UI for all devices while maintaining performance posed a challenge.",
-    "futurePlan": "Plan to integrate a real-time group chat feature using Socket.io and enhance the user dashboard with analytics and activity tracking."
+    "challenges": "Managing dynamic routing and protected access for authenticated users was a key challenge. Also, ensuring responsiveness across all screen sizes while maintaining design consistency required iterative testing and adjustments.",
+    "futurePlan": "Plans include integrating real-time chat using Socket.io. More details dashboard with controls."
   },
   {
     "id": 2,
-    "title": "PranRokto - Blood Donor Finder Website",
-    "description": "PranRokto is a full-stack blood donor finder application built with the MERN stack. It allows users to search for blood donors by blood group and location, manage donor profiles, post reviews, and connect with others. The app features secure authentication, image uploads via Cloudinary, and a responsive UI.",
+    "title": "PranRokto – Blood Donor Finder Platform (FullStack)",
+    "description": "PranRokto is a full-stack blood donor finder application built with the MERN stack. It enables users to search for blood donors based on blood group and location, manage donor profiles, and connect through public reviews and chat features. The platform includes secure authentication, Cloudinary image uploads, and a clean, responsive UI.",
     "live": "https://pran-rokto.vercel.app/",
     "github": "https://github.com/tahmid122/Pran-Rokto",
     "stacks": [
-      "React.js",
       "Tailwind CSS",
-      "Node.js",
+      "React.js",
       "Express.js",
       "MongoDB",
-      "Firebase"
+      "JWT",
+      "Cloudinary"
     ],
     "images": [
       "https://i.ibb.co/xtKxMSMJ/pranrokto.jpg",
@@ -84,59 +94,67 @@
     ],
     "features": [
       {
-        "title": "🔍 Search Functionality",
-        "points": ["Search blood donors by blood group, district, and upazilla"]
+        "title": "🔍 Donor Search System",
+        "points": [
+          "Search donors by blood group, district, and upazila",
+          "Filter results for quick access"
+        ]
       },
       {
         "title": "🔐 Authentication",
-        "points": ["Secure donor and admin authentication using JWT"]
+        "points": [
+          "JWT-based authentication for donors and admins",
+          "Protected routes and role-based access"
+        ]
       },
       {
-        "title": "🧾 Donor Profile Management",
+        "title": "👤 Donor Profile Management",
         "points": [
-          "Donor profile creation and update",
-          "Password management functionality"
+          "Create, update, and delete donor profiles",
+          "Secure password update functionality"
         ]
       },
       {
         "title": "🖼️ Image Handling",
-        "points": ["Image upload and storage using Cloudinary"]
+        "points": [
+          "Image upload using Cloudinary",
+          "Profile photo and donor card image support"
+        ]
       },
       {
-        "title": "💬 Communication",
+        "title": "💬 Communication Features",
         "points": [
-          "Public reviews system",
-          "Chatbox functionality for interaction"
+          "Public review system for donors",
+          "Chatbox interface for user interaction"
         ]
       },
       {
         "title": "📱 Responsive Design",
-        "points": ["Fully responsive user interface for all devices"]
+        "points": [
+          "Fully responsive layout for mobile, tablet, and desktop",
+          "Clean UI with Tailwind CSS"
+        ]
       },
       {
         "title": "🌐 Deployment",
-        "points": [
-          "Frontend hosted on Vercel",
-          "Backend hosted on Render or any Node server"
-        ]
+        "points": ["Frontend hosted on Vercel", "Backend hosted on vercel"]
       }
     ],
-    "challenges": "Integrating conditional routing based on user roles was complex. Also, ensuring responsive UI for all devices while maintaining performance posed a challenge.",
-    "futurePlan": "Plan to integrate a real-time group chat feature using Socket.io and enhance the user dashboard with analytics and activity tracking."
+    "challenges": "Managing dynamic search filters with location and blood group data was complex. Integrating JWT authentication with protected routing and ensuring image upload security via Cloudinary also required extra attention.",
+    "futurePlan": "Future plans include adding real-time chat with Socket.io and developing a dashboard with donation history and user analytics."
   },
   {
     "id": 3,
-    "title": "MS Marathon – Marathon Management App",
-    "description": "MS Marathon is a full-stack marathon event management application built with the MERN stack + Firebase Authentication. It allows users to create and manage marathon events, register as participants, view statistics, and interact through a secure and dynamic dashboard.",
+    "title": "MS Marathon – Marathon Management Platform (FullStack)",
+    "description": "MS Marathon is a full-stack marathon event management application built with the MERN stack and Firebase Authentication. It allows users to create and manage marathon events, register participants, track registrations, and interact via a secure dashboard.",
     "live": "https://ms-marathon.netlify.app/",
     "github": "https://github.com/tahmid122/ms-marathon",
     "stacks": [
-      "React.js",
       "Tailwind CSS",
-      "Node.js",
+      "React.js",
       "Express.js",
       "MongoDB",
-      "Firebase"
+      "Firebase Authentication"
     ],
     "images": [
       "https://i.ibb.co/FLz4C4jD/Screenshot-27-6-2025-2384-ms-marathon-netlify-app.jpg",
@@ -149,26 +167,32 @@
     "features": [
       {
         "title": "📅 Event Management",
-        "points": ["Create, update, and delete marathon events"]
-      },
-      {
-        "title": "👥 Participant Management",
-        "points": ["Register and manage participant information"]
-      },
-      {
-        "title": "🔐 Authentication & Authorization",
         "points": [
-          "Secure authentication using Firebase",
-          "Role-based access control for admins and users"
+          "Create, update, and delete marathon events",
+          "Manage event details and schedules"
         ]
       },
       {
+        "title": "👥 Participant Management",
+        "points": [
+          "Participant registration and profile management",
+          "View participant details and statuses"
+        ]
+      },
+      {
+        "title": "🔐 Authentication",
+        "points": ["Firebase Authentication for secure login"]
+      },
+      {
         "title": "📊 Dashboard",
-        "points": ["Track total marathons and registrations in real-time"]
+        "points": [
+          "Applied and created marathons with update control.",
+          "Summary statistics and insights"
+        ]
       },
       {
         "title": "🔍 Search & Filter",
-        "points": ["Search and filter marathon and participant data"]
+        "points": ["Efficient search and filtering of events and participants"]
       },
       {
         "title": "✅ Route Protection",
@@ -176,11 +200,13 @@
       },
       {
         "title": "⚡ UI/UX",
-        "points": ["Fast and responsive UI using TailwindCSS and DaisyUI"]
+        "points": [
+          "Fast, responsive UI with Tailwind CSS and DaisyUI",
+          "Accessible design with smooth interactions"
+        ]
       }
     ],
-
-    "challenges": "Integrating conditional routing based on user roles was complex. Also, ensuring responsive UI for all devices while maintaining performance posed a challenge.",
-    "futurePlan": "Plan to integrate a real-time group chat feature using Socket.io and enhance the user dashboard with analytics and activity tracking."
+    "challenges": "Handling secure authentication with Firebase and balancing performance across devices required careful optimization.",
+    "futurePlan": "Plans include adding role-based access control, real-time chat support using Socket.io, expanding analytics features, and enhancing user engagement through notifications and reminders."
   }
 ]

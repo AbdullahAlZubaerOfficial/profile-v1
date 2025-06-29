@@ -51,14 +51,14 @@ const About = () => {
               </div>
             </div>
             <div className="space-y-3 dark:text-slate-200">
-              <h2 className="text-2xl lg:text-3xl font-semibold">
+              <h2 className="text-[28px] lg:text-3xl font-semibold leading-8 md:leading-10 lg:lea">
                 <span className="text-sky-500">Passionate</span> <br />
                 Developer and <br /> Lifelong Learner
               </h2>
               <p className="text-base">
-                Experienced MERN stack developer. With a blend of creativity and
-                technical skills, I bring websites to life, transforming ideas
-                into interactive realities
+                Driven MERN stack developer with a focus on building efficient,
+                scalable websites. I thrive on solving real-world challenges
+                through clean code and intuitive design.
               </p>
             </div>
           </div>
@@ -82,14 +82,16 @@ const About = () => {
             <div className="col-span-2 bg-white dark:bg-slate-800 gass rounded-xl shadow-md p-5 space-y-3 dark:text-slate-200">
               <h2 className="text-3xl font-semibold">What Drives Me</h2>
               <p className="text-base">
-                A skilled MERN stack web developer. With a passion for creating
-                seamless digital experiences, I specialize in crafting efficient
-                and user friendly applications. My expertise spans Html5, CSS3,
-                Bootstrap5, Javascript, ES6, React Router, React.js, Node.js,
-                Express.js, MongoDB, allowing me to deliver end-to-end
-                solutions. I thrive on challenges, continuously learn, and am
-                committed to turning your ideas into powerful online realities.
-                Let's collaborate and build something extraordinary.
+                Hello! I’m Md Tahmid Alam, a MERN stack web developer from
+                Rangpur, Bangladesh. My journey began with a deep curiosity
+                about how things work on the web, which soon turned into a drive
+                to build meaningful, user-friendly digital experiences. I enjoy
+                solving problems through clean code and intuitive UI design.
+                What drives me is the joy of turning ideas into real, impactful
+                products. Outside of coding, I enjoy playing badminton,
+                exploring tech content, and trying out design tools for fun. I’m
+                curious, motivated, and always eager to grow through learning
+                and new challenges.
               </p>
             </div>
           </div>
@@ -192,27 +194,29 @@ const About = () => {
             <h2 className="text-3xl font-bold text-white">
               I am committed to collaboration and clear communication.
             </h2>
-            <Link
-              to="contact"
-              smooth={true}
-              spy={true}
-              duration={1000}
-              offset={-60}
-              className="relative inline-block px-4 py-2 font-medium group cursor-pointer"
-            >
-              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-sky-500 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-              <span className="absolute inset-0 w-full h-full bg-white border-2 border-sky-500 group-hover:bg-sky-500"></span>
-              <span className="relative text-black group-hover:text-white">
-                Let's collaborate
-              </span>
-            </Link>
-            <Button
-              text={"Resume"}
-              link={
-                "https://drive.google.com/file/d/11kl6mpE5n_gmRw5gJ3XboFbQLAYjG_un/view?usp=sharing"
-              }
-              target={"_blank"}
-            />
+            <div className="flex items-center gap-3 lg:gap-5">
+              <Link
+                to="contact"
+                smooth={true}
+                spy={true}
+                duration={1000}
+                offset={-60}
+                className="relative inline-block px-4 py-2 font-medium group cursor-pointer"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-sky-500 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-sky-500 group-hover:bg-sky-500"></span>
+                <span className="relative text-black group-hover:text-white">
+                  Let's collaborate
+                </span>
+              </Link>
+              <Button
+                text={"Resume"}
+                link={
+                  "https://drive.google.com/file/d/11kl6mpE5n_gmRw5gJ3XboFbQLAYjG_un/view?usp=sharing"
+                }
+                target={"_blank"}
+              />
+            </div>
           </div>
         </div>
       </Element>
