@@ -4,7 +4,9 @@ import { Link } from "react-router";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../Button/Button";
 import { Element } from "react-scroll";
-import Particles from "../../Animation/Particles";
+import facebook from "../../assets/icons/facebook.png";
+import github from "../../assets/icons/github.png";
+import linkedin from "../../assets/icons/linkedin.png";
 const Banner = () => {
   return (
     <Element name="home" className="element">
@@ -42,27 +44,27 @@ const Banner = () => {
                 data-aos-duration="1000"
                 to={"https://www.facebook.com/TahmidAlamJG"}
                 target="_blank"
-                className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+                className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
               >
-                <FaFacebook size={23} />
+                <img className="w-full h-full" src={facebook} alt="facebook" />
               </Link>
               <Link
                 data-aos="fade-down"
                 data-aos-duration="1000"
                 to={"https://www.linkedin.com/in/tahmidalam122/"}
                 target="_blank"
-                className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+                className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
               >
-                <FaLinkedin size={23} />
+                <img className="w-full h-full" src={linkedin} alt="linkedin" />
               </Link>
               <Link
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 to={"https://github.com/tahmid122"}
                 target="_blank"
-                className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+                className="border-slate-300 dark:border-slate-500 border-none w-10 h-10 rounded-full flex items-center justify-center bg-white"
               >
-                <FaGithub size={23} />
+                <img className="w-full h-full" src={github} alt="github" />
               </Link>
               <Button text={"Resume"} />
             </div>

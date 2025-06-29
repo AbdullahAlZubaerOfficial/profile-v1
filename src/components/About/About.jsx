@@ -11,6 +11,18 @@ import { SiMongodb } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiReactrouter } from "react-icons/si";
 import { Element, Link } from "react-scroll";
+import tailwind from "../../assets/icons/technology/tailwind.png";
+import express from "../../assets/icons/technology/express.png";
+import javascript from "../../assets/icons/technology/javascript.png";
+import mongodb from "../../assets/icons/technology/mongodb.png";
+import node from "../../assets/icons/technology/node.png";
+import react from "../../assets/icons/technology/react.png";
+import firebase from "../../assets/icons/technology/firebase.png";
+import git from "../../assets/icons/technology/git.png";
+import tanstack from "../../assets/icons/technology/tanstack.png";
+import figma from "../../assets/icons/technology/figma.png";
+import jwt from "../../assets/icons/technology/jwt.png";
+import github from "../../assets/icons/github.png";
 const About = () => {
   const code = `
     const developer = {
@@ -95,38 +107,63 @@ const About = () => {
             <h2 className="text-3xl font-semibold dark:text-slate-200">
               My Tech Stack
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-5">
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <RiTailwindCssFill size={25} />
-                <span className="font-semibold">Tailwind</span>
+            <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-3 lg:gap-3">
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={tailwind} alt="" />
+                <span className="text-sm">Tailwind</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <SiJavascript size={25} />
-                <span className="font-semibold">JavaScript</span>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={javascript} alt="" />
+                <span className="text-sm">Javascript</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <FaReact size={25} />
-                <span className="font-semibold">React.js</span>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={react} alt="" />
+                <span className="text-sm">React</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <SiReactrouter size={25} />
-                <span className="font-semibold">R.Router</span>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={firebase} alt="" />
+                <span className="text-sm">Firebase</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <FaNode size={25} />
-                <span className="font-semibold">Node.js</span>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={node} alt="" />
+                <span className="text-sm">Node.js</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <SiExpress size={25} />
-                <span className="font-semibold">Express.js</span>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={express} alt="" />
+                <span className="text-sm">Express.js</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <SiMongodb size={25} />
-                <span className="font-semibold">MongoDB</span>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={mongodb} alt="" />
+                <span className="text-sm">Mongodb</span>
               </div>
-              <div className="flex flex-col md:h-12 md:flex-row items-center justify-center gap-2  px-6 py-2 rounded-xl bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
-                <RiNextjsFill size={25} />
-                <span className="font-semibold">Next.js</span>
+
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={git} alt="" />
+                <span className="text-sm">Git</span>
+              </div>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img
+                  className="h-12 w-12 mb-2 bg-white rounded-full"
+                  src={github}
+                  alt=""
+                />
+                <span className="text-sm">Github</span>
+              </div>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img
+                  className="h-12 w-12 mb-2 bg-white rounded-full"
+                  src={tanstack}
+                  alt=""
+                />
+                <span className="text-sm">T.Query</span>
+              </div>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={jwt} alt="" />
+                <span className="text-sm">JWT</span>
+              </div>
+              <div className="rounded-xl h-[100px] w-[100px] p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <img className="h-12 w-12 mb-2" src={figma} alt="" />
+                <span className="text-sm">Figma</span>
               </div>
             </div>
           </div>
@@ -146,8 +183,8 @@ const About = () => {
               offset={-60}
               className="relative inline-block px-4 py-2 font-medium group cursor-pointer"
             >
-              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-purple-800 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-              <span className="absolute inset-0 w-full h-full bg-white border-2 border-purple-800 group-hover:bg-purple-800"></span>
+              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-sky-500 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+              <span className="absolute inset-0 w-full h-full bg-white border-2 border-sky-500 group-hover:bg-sky-500"></span>
               <span className="relative text-black group-hover:text-white">
                 Let's collaborate
               </span>

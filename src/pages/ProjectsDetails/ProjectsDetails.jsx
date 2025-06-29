@@ -7,6 +7,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from "react-router";
 import { animateScroll } from "react-scroll";
 import logo from "/logo.jpg";
+import AnimatedCursor from "react-animated-cursor";
 
 const ProjectsDetails = () => {
   const projects = useLoaderData();
@@ -18,6 +19,27 @@ const ProjectsDetails = () => {
   }, []);
   return (
     <>
+      <AnimatedCursor
+        innerSize={10}
+        outerSize={50}
+        color="255, 68, 0"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={1.5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <div className="w-full  lg:h-20 flex items-center justify-center sticky top-0 z-30">
         <div className="flex gap-4 items-center p-1 lg:p-3 rounded-xl glass shadow-md mt-2 lg:mt-5 border-2 relative">
           <div className="flex items-center gap-4">

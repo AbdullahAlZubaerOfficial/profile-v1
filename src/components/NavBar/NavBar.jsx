@@ -24,7 +24,7 @@ const NavBar = () => {
             duration={1000}
           >
             <img
-              className="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover shadow-md border-slate-500 cursor-pointer"
+              className="h-8 w-8 lg:h-12 lg:w-12 rounded-full object-cover shadow-md border-2 cursor-pointer border-sky-500"
               src={logo}
               alt="tahmidImage"
             />

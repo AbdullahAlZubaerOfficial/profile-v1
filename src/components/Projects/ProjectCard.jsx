@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
           <h3 className="text-2xl font-semibold">{project.title}</h3>
           <p className="text-base">
             {project.description.slice(0, 100)}...
-            <Link to={`/project/${project.id}`} className="text-purple-800">
+            <Link to={`/project/${project.id}`} className="text-sky-500">
               read more
             </Link>
           </p>
@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
             {project?.stacks.map((stack, i) => (
               <span
                 key={i}
-                className="shadow-md bg-white rounded-xl p-2 text-sm  text-slate-800"
+                className="shadow-md bg-white rounded-xl p-1 px-2 text-sm  text-slate-800"
               >
                 {stack}
               </span>

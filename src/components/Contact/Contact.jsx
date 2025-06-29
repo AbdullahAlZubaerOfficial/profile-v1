@@ -9,7 +9,12 @@ import { FaMessage } from "react-icons/fa6";
 import Button from "../Button/Button";
 import Lottie from "lottie-react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-
+import gmail from "../../assets/icons/gmail.png";
+import whatsapp from "../../assets/icons/whatsapp.png";
+import location from "../../assets/icons/location.png";
+import facebook from "../../assets/icons/facebook.png";
+import github from "../../assets/icons/github.png";
+import linkedin from "../../assets/icons/linkedin.png";
 import contactAnimation from "../../assets/contact2.json";
 import { Link } from "react-router";
 import { Element } from "react-scroll";
@@ -40,8 +45,8 @@ const Contact = () => {
             >
               <div className="space-y-3">
                 <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
-                  <span>
-                    <MdEmail size={30} />
+                  <span className="w-[45px]">
+                    <img className="w-full h-full" src={gmail} alt="gmail" />
                   </span>
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
@@ -51,8 +56,12 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
-                  <span>
-                    <FaPhone size={30} />
+                  <span className="w-[45px]">
+                    <img
+                      className="w-full h-full"
+                      src={whatsapp}
+                      alt="whatsapp"
+                    />
                   </span>
                   <div>
                     <h4 className="font-semibold text-lg">Phone</h4>
@@ -60,8 +69,12 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
-                  <span>
-                    <FaLocationDot size={30} />
+                  <span className="w-[45px]">
+                    <img
+                      className="w-full h-full"
+                      src={location}
+                      alt="location"
+                    />
                   </span>
                   <div>
                     <h4 className="font-semibold text-lg">Location</h4>
@@ -81,27 +94,39 @@ const Contact = () => {
                       data-aos-duration="1000"
                       to={"https://www.facebook.com/TahmidAlamJG"}
                       target="_blank"
-                      className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+                      className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >
-                      <FaFacebook size={23} />
+                      <img
+                        className="w-full h-full"
+                        src={facebook}
+                        alt="facebook"
+                      />
                     </Link>
                     <Link
                       data-aos="fade-down"
                       data-aos-duration="1000"
                       to={"https://www.linkedin.com/in/tahmidalam122/"}
                       target="_blank"
-                      className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+                      className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >
-                      <FaLinkedin size={23} />
+                      <img
+                        className="w-full h-full"
+                        src={linkedin}
+                        alt="linkedin"
+                      />
                     </Link>
                     <Link
                       data-aos="fade-left"
                       data-aos-duration="1000"
                       to={"https://github.com/tahmid122"}
                       target="_blank"
-                      className="border border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
+                      className="border-slate-300 dark:border-slate-500 border-none w-10 h-10 rounded-full flex items-center justify-center bg-white"
                     >
-                      <FaGithub size={23} />
+                      <img
+                        className="w-full h-full"
+                        src={github}
+                        alt="github"
+                      />
                     </Link>
                   </div>
                 </div>
