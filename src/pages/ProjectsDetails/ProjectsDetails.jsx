@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { use, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router";
 import Title from "../../components/Title/Title";
 import Slider from "./Slider";
@@ -8,10 +8,11 @@ import { Link } from "react-router";
 import { animateScroll } from "react-scroll";
 import logo from "/logo.jpg";
 import AnimatedCursor from "react-animated-cursor";
+import { ModeContext } from "../../contexts/ModeContext";
 
 const ProjectsDetails = () => {
+  const { mode } = use(ModeContext);
   const projects = useLoaderData();
-  console.log(projects);
   const { id } = useParams();
   const project = projects.find((pro) => pro.id == id);
   useEffect(() => {
@@ -20,9 +21,11 @@ const ProjectsDetails = () => {
   return (
     <>
       <AnimatedCursor
+        key={mode}
         innerSize={10}
         outerSize={50}
-        color="255, 68, 0"
+        // color="255, 68, 0"
+        color={mode ? "255,255,255" : "30,41,59"}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={1.5}
@@ -59,9 +62,6 @@ const ProjectsDetails = () => {
         </div>
       </div>
       <div className="lg:w-11/12 mx-auto p-5 dark:text-slate-200">
-        <Link to="/">
-          <FaArrowLeftLong size={25} />
-        </Link>
         <div className="-mt-5">
           <Title title={"Details"} />
         </div>

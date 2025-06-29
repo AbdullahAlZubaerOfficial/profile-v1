@@ -1,5 +1,6 @@
 import React from "react";
 import image from "/perfect2.png";
+import Tilt from "react-parallax-tilt";
 import { Link } from "react-router";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../Button/Button";
@@ -12,17 +13,19 @@ const Banner = () => {
     <Element name="home" className="element">
       <div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 lg:ml-10 space-y-10 lg:space-y-0 lg:gap-20">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            className="col-span-1 place-items-center lg:place-items-end"
-          >
-            <img
-              className="w-[350px] h-[400px] lg:h-auto mx-auto lg:w-[350px] drop-shadow-2xl drop-shadow-blue-300"
-              src={image}
-              alt=""
-            />
-          </div>
+          <Tilt scale={1.1} transitionSpeed={2500}>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="col-span-1 place-items-center lg:place-items-end"
+            >
+              <img
+                className="w-[350px] h-[400px] lg:h-auto mx-auto lg:w-[350px] drop-shadow-2xl drop-shadow-blue-300"
+                src={image}
+                alt=""
+              />
+            </div>
+          </Tilt>
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -66,7 +69,13 @@ const Banner = () => {
               >
                 <img className="w-full h-full" src={github} alt="github" />
               </Link>
-              <Button text={"Resume"} />
+              <Button
+                text={"Resume"}
+                link={
+                  "https://drive.google.com/file/d/11kl6mpE5n_gmRw5gJ3XboFbQLAYjG_un/view?usp=sharing"
+                }
+                target={"_blank"}
+              />
             </div>
           </div>
         </div>

@@ -17,9 +17,11 @@ const RootLayout = () => {
   return (
     <>
       <AnimatedCursor
+        key={mode}
         innerSize={10}
         outerSize={50}
-        color="255, 68, 0"
+        // color="255, 68, 0"
+        color={mode ? "255,255,255" : "30,41,59"}
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={1.5}

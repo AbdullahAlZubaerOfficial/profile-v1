@@ -19,6 +19,11 @@ import contactAnimation from "../../assets/contact2.json";
 import { Link } from "react-router";
 import { Element } from "react-scroll";
 const Contact = () => {
+  const handleEmailSend = (e) => {
+    e.preventDefault();
+    console.log("submitted");
+    console.log(e.target);
+  };
   return (
     <>
       <Element name="contact" className="element">
@@ -41,7 +46,7 @@ const Contact = () => {
             <div
               data-aos="fade-right"
               data-aos-duration="1000"
-              className="dark:text-slate-200 bg-white dark:bg-slate-800 p-3 lg:p-5 rounded-xl shadow-md lg:flex gap-3 lg:gap-5"
+              className="dark:text-slate-200 bg-white dark:bg-slate-800 p-3 lg:p-5 rounded-xl shadow-md lg:flex items-center gap-3 lg:gap-5"
             >
               <div className="space-y-3">
                 <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
@@ -51,7 +56,9 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
                     <a href="mailto:mdtahmidalam122@gmail.com">
-                      mdtahmidalam122@gmail.com
+                      mdtahmidalam122
+                      <br className="sm:hidden" />
+                      @gmail.com
                     </a>
                   </div>
                 </div>
@@ -87,7 +94,9 @@ const Contact = () => {
                   <Lottie animationData={contactAnimation} loop={true} />
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-semibold">Follow Me On</h3>
+                  <h3 className="text-2xl font-semibold text-center">
+                    Follow Me
+                  </h3>
                   <div className="flex items-center gap-3 lg:gap-4">
                     <Link
                       data-aos="fade-right"
@@ -143,7 +152,7 @@ const Contact = () => {
               Send me a message
             </h3>
             <div>
-              <form className="space-y-3">
+              <form onSubmit={handleEmailSend} className="space-y-3">
                 <div className="flex lg:flex-row flex-col items-center gap-5">
                   <div className="w-full">
                     <label className="mb-2 text-sm text-slate-900 dark:text-slate-200 font-medium block">
@@ -212,7 +221,16 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="w-full text-center">
-                  <Button text={"Send message"} />
+                  <button
+                    type="submit"
+                    className="relative inline-block px-4 py-2 font-medium group"
+                  >
+                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-sky-500 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-sky-500 group-hover:bg-sky-500"></span>
+                    <span className="relative text-black group-hover:text-white">
+                      Send Message
+                    </span>
+                  </button>
                 </div>
               </form>
             </div>

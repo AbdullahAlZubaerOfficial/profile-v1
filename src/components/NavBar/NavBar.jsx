@@ -114,7 +114,7 @@ const NavBar = () => {
         <div
           className={`absolute center w-[350px] p-5 ${
             isActive ? "translate-x-0" : "-translate-y-[calc(100%+200px)]"
-          } transition-transform duration-700 bg-[#ffffffe6] dark:bg-slate-700 rounded-xl`}
+          } transition-transform duration-700 bg-[#fffffffe] dark:bg-slate-700 rounded-xl`}
         >
           <ul className="flex flex-col  items-center gap-4 font-medium text-base dark:text-slate-200">
             <li>

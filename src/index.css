@@ -29,7 +29,7 @@ body {
   @apply bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800;
 }
 .active {
-  color: #6b21a8;
+  color: black;
   font-weight: bold;
 }
 .dark .active {
@@ -41,7 +41,6 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%);
-  color: rgb(255, 68, 0);
 }
 
 /*  */
