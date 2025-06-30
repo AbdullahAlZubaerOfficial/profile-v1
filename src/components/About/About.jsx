@@ -20,13 +20,12 @@ import github from "../../assets/icons/github.png";
 const About = () => {
   const code = `
     const developer = {
-        firstName: "Tahmid",
-        lastName: "Alam",
-        hobby: repeat=()=>{
-                eat()
-                sleep()
-                code()
-        }
+        name: "Tahmid Alam",
+        stack: "MERN,
+        location: "Rangpur, BD"
+        traits: ["Lifelong Learner", 
+                 "Creative Thinker",
+                 "Adaptable"]
     }`;
   return (
     <>

@@ -107,7 +107,7 @@ const Banner = () => {
               src={calander}
               alt=""
             />
-            <span className="text-xl lg:text-2xl font-bold mb-5">6+</span>
+            <span className="text-xl lg:text-2xl font-bold mb-5">0.5+</span>
             <p className="text-sm lg:text-base">Years of experience</p>
           </div>
           <div className="text-center p-2">
@@ -116,7 +116,7 @@ const Banner = () => {
               src={project}
               alt=""
             />
-            <span className="text-xl lg:text-2xl font-bold mb-5">150+</span>
+            <span className="text-xl lg:text-2xl font-bold mb-5">60+</span>
             <p className="text-sm lg:text-base">Completed projects</p>
           </div>
           <div className="text-center p-2">
