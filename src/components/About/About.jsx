@@ -66,7 +66,11 @@ const About = () => {
             data-aos-duration="1000"
             className="lg:col-span-2 grid space-y-3 lg:space-y-0 lg:gap-5 grid-cols-1  lg:grid-cols-3 p-3 lg:p-5 rounded-xl glass shadow-md"
           >
-            <div className="bg-white dark:text-slate-200 dark:bg-slate-800 rounded-md p-3  col-span-1 shadow-md">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1200"
+              className="bg-white dark:text-slate-200 dark:bg-slate-800 rounded-md p-3  col-span-1 shadow-md"
+            >
               <div className="flex items-center border-b-2 pb-5 border-b-slate-300">
                 <div className="h-3 w-3 rounded-full mr-2 bg-red-500"></div>
                 <div className="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
@@ -78,7 +82,11 @@ const About = () => {
                 </pre>
               </div>
             </div>
-            <div className="col-span-2 bg-white dark:bg-slate-800 gass rounded-xl shadow-md p-5 space-y-3 dark:text-slate-200">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1300"
+              className="col-span-2 bg-white dark:bg-slate-800 gass rounded-xl shadow-md p-5 space-y-3 dark:text-slate-200"
+            >
               <h2 className="text-3xl font-semibold">What Drives Me</h2>
               <p className="text-base">
                 Hello! I’m Md Tahmid Alam, a MERN stack web developer from
@@ -104,55 +112,91 @@ const About = () => {
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 gap-3 lg:gap-3">
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1100"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={tailwind} alt="" />
                   <span className="text-sm">Tailwind</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1150"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={javascript} alt="" />
                   <span className="text-sm">Javascript</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1200"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={react} alt="" />
                   <span className="text-sm">React</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1250"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={firebase} alt="" />
                   <span className="text-sm">Firebase</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1300"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={node} alt="" />
                   <span className="text-sm">Node.js</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1350"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={express} alt="" />
                   <span className="text-sm">Express.js</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1400"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={mongodb} alt="" />
                   <span className="text-sm">Mongodb</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1450"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={git} alt="" />
                   <span className="text-sm">Git</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img
                     className="h-12 w-12 mb-2 bg-white rounded-full"
                     src={github}
@@ -162,7 +206,11 @@ const About = () => {
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1550"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img
                     className="h-12 w-12 mb-2 bg-white rounded-full"
                     src={tanstack}
@@ -172,13 +220,21 @@ const About = () => {
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1600"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={jwt} alt="" />
                   <span className="text-sm">JWT</span>
                 </div>
               </Tilt>
               <Tilt>
-                <div className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1650"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
                   <img className="h-12 w-12 mb-2" src={figma} alt="" />
                   <span className="text-sm">Figma</span>
                 </div>

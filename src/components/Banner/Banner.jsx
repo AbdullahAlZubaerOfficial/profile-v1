@@ -63,7 +63,7 @@ const Banner = () => {
               <Link
                 data-aos="fade-down"
                 data-aos-duration="1000"
-                to={"https://www.linkedin.com/in/tahmidalam122/"}
+                to={"https://www.linkedin.com/in/mdtahmidalam/"}
                 target="_blank"
                 className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
               >
@@ -89,7 +89,7 @@ const Banner = () => {
               <Button
                 text={"Resume"}
                 link={
-                  "https://drive.google.com/file/d/11kl6mpE5n_gmRw5gJ3XboFbQLAYjG_un/view?usp=sharing"
+                  "https://drive.google.com/file/d/1HRf-0bRcO6gn2mEZj1Eg4xVI3fAnc8mH/view?usp=sharing"
                 }
                 target={"_blank"}
               />

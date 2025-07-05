@@ -70,7 +70,11 @@ const Contact = () => {
               className="dark:text-slate-200 bg-white dark:bg-slate-800 p-3 lg:p-5 rounded-xl shadow-md lg:flex items-center gap-3 lg:gap-5"
             >
               <div className="space-y-3">
-                <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1200"
+                  className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white"
+                >
                   <span className="w-[45px]">
                     <img className="w-full h-full" src={gmail} alt="gmail" />
                   </span>
@@ -81,7 +85,11 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1300"
+                  className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white"
+                >
                   <span className="w-[45px]">
                     <img
                       className="w-full h-full"
@@ -94,7 +102,11 @@ const Contact = () => {
                     <a href="tel:+8801318195591">+88 01318195591</a>
                   </div>
                 </div>
-                <div className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1400"
+                  className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white"
+                >
                   <span className="w-[45px]">
                     <img
                       className="w-full h-full"
@@ -133,7 +145,7 @@ const Contact = () => {
                     <Link
                       data-aos="fade-down"
                       data-aos-duration="1000"
-                      to={"https://www.linkedin.com/in/tahmidalam122/"}
+                      to={"https://www.linkedin.com/in/mdtahmidalam/"}
                       target="_blank"
                       className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
                     >

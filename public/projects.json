@@ -1,10 +1,76 @@
 [
   {
+    "id": 3,
+    "title": "MS Marathon – Marathon Management Platform (FullStack)",
+    "description": "MS Marathon is a full-stack marathon event management application built with the MERN stack and Firebase Authentication. It allows users to create and manage marathon events, register participants, track registrations, and interact via a secure dashboard.",
+    "live": "https://ms-marathon.netlify.app/",
+    "github": "https://github.com/tahmid122/ms-marathon",
+    "stacks": [
+      "Tailwind CSS",
+      "React.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication"
+    ],
+    "images": [
+      "https://i.ibb.co/FLz4C4jD/Screenshot-27-6-2025-2384-ms-marathon-netlify-app.jpg",
+      "https://i.ibb.co/JFGmvHgK/Screenshot-2025-06-28-095656.png",
+      "https://i.ibb.co/2HZpZfT/Screenshot-2025-06-28-095624.png",
+      "https://i.ibb.co/BKYw4byQ/Screenshot-2025-06-28-095428.png",
+      "https://i.ibb.co/Q3KGtJQQ/Screenshot-2025-06-28-095342.png",
+      "https://i.ibb.co/svd6mByV/Screenshot-2025-06-28-095321.png"
+    ],
+    "features": [
+      {
+        "title": "📅 Event Management",
+        "points": [
+          "Create, update, and delete marathon events",
+          "Manage event details and schedules"
+        ]
+      },
+      {
+        "title": "👥 Participant Management",
+        "points": [
+          "Participant registration and profile management",
+          "View participant details and statuses"
+        ]
+      },
+      {
+        "title": "🔐 Authentication",
+        "points": ["Firebase Authentication for secure login"]
+      },
+      {
+        "title": "📊 Dashboard",
+        "points": [
+          "Applied and created marathons with update control.",
+          "Summary statistics and insights"
+        ]
+      },
+      {
+        "title": "🔍 Search & Filter",
+        "points": ["Efficient search and filtering of events and participants"]
+      },
+      {
+        "title": "✅ Route Protection",
+        "points": ["Firebase token-based protected routes"]
+      },
+      {
+        "title": "⚡ UI/UX",
+        "points": [
+          "Fast, responsive UI with Tailwind CSS and DaisyUI",
+          "Accessible design with smooth interactions"
+        ]
+      }
+    ],
+    "challenges": "Handling secure authentication with Firebase and balancing performance across devices required careful optimization.",
+    "futurePlan": "Plans include adding role-based access control, real-time chat support using Socket.io, expanding analytics features, and enhancing user engagement through notifications and reminders."
+  },
+  {
     "id": 1,
     "title": "HobbyHub –Group Meetup Platform (FullStack)",
     "description": "HobbyHub is a full-stack social meetup platform where users can create, join, and manage hobby-based groups. Designed with a focus on user experience and scalability, it features a clean UI, secure authentication, dynamic routing, and essential CRUD operations for group and meetup management.",
     "live": "https://hobbyhub-bytahmid.netlify.app/",
-    "github": "https://github.com/tahmid122/hobbyhub-client",
+    "github": "https://github.com/tahmid122/hobby-hub",
     "stacks": [
       "Tailwind CSS",
       "React.js",
@@ -142,71 +208,5 @@
     ],
     "challenges": "Managing dynamic search filters with location and blood group data was complex. Integrating JWT authentication with protected routing and ensuring image upload security via Cloudinary also required extra attention.",
     "futurePlan": "Future plans include adding real-time chat with Socket.io and developing a dashboard with donation history and user analytics."
-  },
-  {
-    "id": 3,
-    "title": "MS Marathon – Marathon Management Platform (FullStack)",
-    "description": "MS Marathon is a full-stack marathon event management application built with the MERN stack and Firebase Authentication. It allows users to create and manage marathon events, register participants, track registrations, and interact via a secure dashboard.",
-    "live": "https://ms-marathon.netlify.app/",
-    "github": "https://github.com/tahmid122/ms-marathon",
-    "stacks": [
-      "Tailwind CSS",
-      "React.js",
-      "Express.js",
-      "MongoDB",
-      "Firebase Authentication"
-    ],
-    "images": [
-      "https://i.ibb.co/FLz4C4jD/Screenshot-27-6-2025-2384-ms-marathon-netlify-app.jpg",
-      "https://i.ibb.co/JFGmvHgK/Screenshot-2025-06-28-095656.png",
-      "https://i.ibb.co/2HZpZfT/Screenshot-2025-06-28-095624.png",
-      "https://i.ibb.co/BKYw4byQ/Screenshot-2025-06-28-095428.png",
-      "https://i.ibb.co/Q3KGtJQQ/Screenshot-2025-06-28-095342.png",
-      "https://i.ibb.co/svd6mByV/Screenshot-2025-06-28-095321.png"
-    ],
-    "features": [
-      {
-        "title": "📅 Event Management",
-        "points": [
-          "Create, update, and delete marathon events",
-          "Manage event details and schedules"
-        ]
-      },
-      {
-        "title": "👥 Participant Management",
-        "points": [
-          "Participant registration and profile management",
-          "View participant details and statuses"
-        ]
-      },
-      {
-        "title": "🔐 Authentication",
-        "points": ["Firebase Authentication for secure login"]
-      },
-      {
-        "title": "📊 Dashboard",
-        "points": [
-          "Applied and created marathons with update control.",
-          "Summary statistics and insights"
-        ]
-      },
-      {
-        "title": "🔍 Search & Filter",
-        "points": ["Efficient search and filtering of events and participants"]
-      },
-      {
-        "title": "✅ Route Protection",
-        "points": ["Firebase token-based protected routes"]
-      },
-      {
-        "title": "⚡ UI/UX",
-        "points": [
-          "Fast, responsive UI with Tailwind CSS and DaisyUI",
-          "Accessible design with smooth interactions"
-        ]
-      }
-    ],
-    "challenges": "Handling secure authentication with Firebase and balancing performance across devices required careful optimization.",
-    "futurePlan": "Plans include adding role-based access control, real-time chat support using Socket.io, expanding analytics features, and enhancing user engagement through notifications and reminders."
   }
 ]
