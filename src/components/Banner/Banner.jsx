@@ -89,7 +89,7 @@ const Banner = () => {
               <Button
                 text={"Resume"}
                 link={
-                  "https://drive.google.com/file/d/1HRf-0bRcO6gn2mEZj1Eg4xVI3fAnc8mH/view?usp=sharing"
+                  "https://drive.google.com/file/d/1X3XvQzSnZC53CANg2Klso3e-Fmha56hm/view?usp=sharing"
                 }
                 target={"_blank"}
               />
