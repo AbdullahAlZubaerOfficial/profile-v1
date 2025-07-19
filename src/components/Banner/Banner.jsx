@@ -41,10 +41,10 @@ const Banner = () => {
             </h1>
             <p className="text-base lg:text-lg lg:w-5/6">
               Experienced MERN stack developer skilled in Tailwind, JavaScript,
-              ES6, React.js, React Router, Node.js, Express.js, and MongoDB.
-              With a blend of creativity and technical expertise, I bring
-              websites to life by transforming ideas into responsive and dynamic
-              web applications.
+              ES6, React.js, React Router, Next.js, Node.js, Express.js, and
+              MongoDB. With a blend of creativity and technical expertise, I
+              bring websites to life by transforming ideas into responsive and
+              dynamic web applications.
             </p>
             <div className="flex items-center gap-4">
               <Link

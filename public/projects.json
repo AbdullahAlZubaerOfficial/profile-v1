@@ -1,5 +1,85 @@
 [
   {
+    "id": 4,
+    "title": "Bari Bazaar – Real Estate Website (FullStack)",
+    "description": "Bari Bazaar is a full-featured Real Estate Platform built with React, enabling users to explore, wishlist, and purchase properties, while agents can manage their listings and admins oversee platform operations.",
+    "live": "https://bari-bazaar.web.app/",
+    "github": "#",
+    "stacks": [
+      "Tailwind CSS",
+      "React.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Firebase"
+    ],
+    "images": [
+      "https://i.ibb.co/nNkDfBPp/Screenshot-19-7-2025-15305-bari-bazaar-web-app.jpg",
+      "https://i.ibb.co/27P8W1kf/Screenshot-19-7-2025-153542-bari-bazaar-web-app.jpg",
+      "https://i.ibb.co/BHHdhsDm/Screenshot-19-7-2025-15340-bari-bazaar-web-app.jpg",
+      "https://i.ibb.co/FbR4FHWN/Screenshot-19-7-2025-153255-bari-bazaar-web-app.jpg",
+      "https://i.ibb.co/0ybb5gpX/Screenshot-19-7-2025-153156-bari-bazaar-web-app.jpg"
+    ],
+
+    "features": [
+      {
+        "title": "🔐 Authentication & Authorization",
+        "points": [
+          "Email & Password Authentication with social login integration",
+          "JWT-based authentication with persistent login",
+          "Role-based access control for User, Agent, Admin"
+        ]
+      },
+      {
+        "title": "👥 User Roles & Management",
+        "points": [
+          "Three user roles: User, Agent, Admin",
+          "Admins can verify, reject, advertise, and manage properties, users, and reviews",
+          "Agents can add, update, and manage their properties and sales",
+          "Profile edit functionality for all roles"
+        ]
+      },
+      {
+        "title": "🏠 Property Features",
+        "points": [
+          "Users can wishlist properties and make offers within price ranges",
+          "Price-based filtering on All Properties page",
+          "Interactive reviews system per property with add and delete features"
+        ]
+      },
+      {
+        "title": "💳 Payments",
+        "points": ["Stripe payment integration for property purchases"]
+      },
+      {
+        "title": "📊 Dashboards & Analytics",
+        "points": [
+          "Rich dashboard views for each user role with data tables and visual cards.",
+          "Selling statistics charts for agents"
+        ]
+      },
+      {
+        "title": "⚡ UI/UX Enhancements",
+        "points": [
+          "Fully responsive design for mobile, tablet, and desktop",
+          "Swiper.js sliders, AOS animations, Lottie animations for smooth UI/UX",
+          "SweetAlert2 and React Toast for all CRUD operations and notifications"
+        ]
+      },
+      {
+        "title": "🔧 Utilities & Tools",
+        "points": [
+          "TanStack React Query for data fetching and mutations",
+          "React Hook Form for form validation",
+          "Fast loaders and interactive elements for seamless experience"
+        ]
+      }
+    ],
+
+    "challenges": "Handling secure authentication with Firebase and balancing performance across devices required careful optimization.",
+    "futurePlan": "Plans expanding analytics features, and enhancing user engagement through notifications and reminders."
+  },
+  {
     "id": 3,
     "title": "MS Marathon – Marathon Management Platform (FullStack)",
     "description": "MS Marathon is a full-stack marathon event management application built with the MERN stack and Firebase Authentication. It allows users to create and manage marathon events, register participants, track registrations, and interact via a secure dashboard.",

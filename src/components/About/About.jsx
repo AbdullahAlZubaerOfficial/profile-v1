@@ -13,6 +13,7 @@ import node from "../../assets/icons/technology/node.png";
 import react from "../../assets/icons/technology/react.png";
 import firebase from "../../assets/icons/technology/firebase.png";
 import git from "../../assets/icons/technology/git.png";
+import nextjs from "../../assets/icons/technology/nextjs.svg";
 import tanstack from "../../assets/icons/technology/tanstack.png";
 import figma from "../../assets/icons/technology/figma.png";
 import jwt from "../../assets/icons/technology/jwt.png";
@@ -144,6 +145,16 @@ const About = () => {
               <Tilt>
                 <div
                   data-aos="zoom-in"
+                  data-aos-duration="1200"
+                  className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
+                >
+                  <img className="h-12 w-12 mb-2" src={nextjs} alt="" />
+                  <span className="text-sm">Next.js</span>
+                </div>
+              </Tilt>
+              <Tilt>
+                <div
+                  data-aos="zoom-in"
                   data-aos-duration="1250"
                   className="rounded-xl   p-3 flex flex-col items-center bg-white dark:text-slate-200 dark:bg-slate-800 shadow-md"
                 >
@@ -244,7 +255,7 @@ const About = () => {
           <div
             data-aos="fade-left"
             data-aos-duration="1000"
-            className="lg:col-span-1 rounded-xl bg-sky-700 p-5 shadow-md space-y-5 text-center flex flex-col items-center justify-center"
+            className="lg:col-span-1 rounded-xl bg-slate-800 p-5 shadow-md space-y-5 text-center flex flex-col items-center justify-center"
           >
             <h2 className="text-3xl font-bold text-white">
               I am committed to collaboration and clear communication.
