@@ -1,23 +1,24 @@
 import React from "react";
-import Title from "../Title/Title";
-import ProjectCard from "./ProjectCard";
-import { useLoaderData } from "react-router";
-import { Element } from "react-scroll";
+import ProjectCardsComponent from "./ProjectCardsComponent";
 
-const Projects = () => {
-  const projects = useLoaderData();
+function Projects() {
   return (
-    <>
-      <Element name="projects" className="element">
-        <Title title={"Projects"} />
-        <div className="my-15 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
-          {projects?.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
+      <div className="container px-4 mx-auto">
+        <div className="md:mb-16 mb-5 text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-gray-900 dark:text-white">
+            My Projects
+          </h2>
+          <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
+            A showcase of my recent work, personal projects, and collaborations.
+          </p>
         </div>
-      </Element>
-    </>
+
+        <ProjectCardsComponent />
+        
+      </div>
+    </section>
   );
-};
+}
 
 export default Projects;

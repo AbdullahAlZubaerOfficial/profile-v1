@@ -1,297 +1,338 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Title from "../Title/Title";
-import { MdEmail } from "react-icons/md";
-import { FaPhone } from "react-icons/fa6";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaUser } from "react-icons/fa";
-import { FaBookOpen } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
-import Button from "../Button/Button";
+import { FaUser, FaBookOpen, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { MdEmail, MdMessage } from "react-icons/md";
 import Lottie from "lottie-react";
-import emailjs from "emailjs-com";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import gmail from "../../assets/icons/gmail.png";
-import whatsapp from "../../assets/icons/whatsapp.png";
-import location from "../../assets/icons/location.png";
-import facebook from "../../assets/icons/facebook.png";
-import github from "../../assets/icons/github.png";
-import linkedin from "../../assets/icons/linkedin.png";
 import contactAnimation from "../../assets/contact2.json";
-import { Link } from "react-router";
-import { Element } from "react-scroll";
 import toast from "react-hot-toast";
-const Contact = () => {
-  const formRef = useRef();
-  const [isPending, setIsPending] = useState(false);
-  const handleEmailSend = (e) => {
-    e.preventDefault();
-    setIsPending(true);
-    emailjs
-      .sendForm(
-        `${import.meta.env.VITE_S_KEY}`, // Replace with your EmailJS Service ID
-        `${import.meta.env.VITE_T_KEY}`, // Replace with your EmailJS Template ID
-        formRef.current,
-        `${import.meta.env.VITE_P_KEY}` // Replace with your EmailJS Public Key
-      )
-      .then(
-        () => {
-          setIsPending(false);
-          toast.success("Email sent");
 
-          formRef.current.reset();
-        },
-        (error) => {
-          toast.error(error.text);
-        }
-      );
-  };
-  return (
-    <>
-      <Element name="contact" className="element">
-        <Title title={"Get In Touch"} />
-        <div className="my-15 grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
-          <div className="space-y-3 lg:space-y-6">
-            <div
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              className="space-y-3 bg-white dark:text-slate-200 dark:bg-slate-800 dark:border-none  p-5 rounded-xl shadow-md"
-            >
-              <h3 className="text-3xl font-semibold ">
-                Let's create something <br /> amazing together!
-              </h3>
-              <p className="text-base">
-                Feel free to reach out for projects, collaborations, or web web
-                development inquiries via the form or email.
-              </p>
-            </div>
-            <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              className="dark:text-slate-200 bg-white dark:bg-slate-800 p-3 lg:p-5 rounded-xl shadow-md lg:flex items-center gap-3 lg:gap-5"
-            >
-              <div className="space-y-3">
-                <div
-                  data-aos="zoom-in"
-                  data-aos-duration="1200"
-                  className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white"
-                >
-                  <span className="w-[45px]">
-                    <img className="w-full h-full" src={gmail} alt="gmail" />
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-lg">Email</h4>
-                    <a href="mailto:mdtahmidalam122@gmail.com">
-                      mdtahmidalam122@gmail.com
-                    </a>
-                  </div>
-                </div>
-                <div
-                  data-aos="zoom-in"
-                  data-aos-duration="1300"
-                  className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white"
-                >
-                  <span className="w-[45px]">
-                    <img
-                      className="w-full h-full"
-                      src={whatsapp}
-                      alt="whatsapp"
-                    />
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-lg">Phone</h4>
-                    <a href="tel:+8801318195591">+88 01318195591</a>
-                  </div>
-                </div>
-                <div
-                  data-aos="zoom-in"
-                  data-aos-duration="1400"
-                  className="flex glass items-center gap-3 p-5 shadow-md rounded-xl bg-white"
-                >
-                  <span className="w-[45px]">
-                    <img
-                      className="w-full h-full"
-                      src={location}
-                      alt="location"
-                    />
-                  </span>
-                  <div>
-                    <h4 className="font-semibold text-lg">Location</h4>
-                    <p>Rangpur, Bangladesh</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-start  w-full ">
-                <div className="w-[70%]">
-                  <Lottie animationData={contactAnimation} loop={true} />
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-semibold text-center">
-                    Follow Me
-                  </h3>
-                  <div className="flex items-center gap-3 lg:gap-4">
-                    <Link
-                      data-aos="fade-right"
-                      data-aos-duration="1000"
-                      to={"https://www.facebook.com/TahmidAlamJG"}
-                      target="_blank"
-                      className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
-                    >
-                      <img
-                        className="w-full h-full hover:scale-110 transition-transform duration-500"
-                        src={facebook}
-                        alt="facebook"
-                      />
-                    </Link>
-                    <Link
-                      data-aos="fade-down"
-                      data-aos-duration="1000"
-                      to={"https://www.linkedin.com/in/mdtahmidalam/"}
-                      target="_blank"
-                      className=" border-slate-300 dark:border-slate-500 w-10 h-10 rounded-full flex items-center justify-center"
-                    >
-                      <img
-                        className="w-full h-full hover:scale-110 transition-transform duration-500"
-                        src={linkedin}
-                        alt="linkedin"
-                      />
-                    </Link>
-                    <Link
-                      data-aos="fade-left"
-                      data-aos-duration="1000"
-                      to={"https://github.com/tahmid122"}
-                      target="_blank"
-                      className="border-slate-300 dark:border-slate-500 border-none w-10 h-10 rounded-full flex items-center justify-center bg-white"
-                    >
-                      <img
-                        className="w-full h-full hover:scale-110 transition-transform duration-500"
-                        src={github}
-                        alt="github"
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            className="bg-white border border-slate-300 glass rounded-xl p-3 lg:p-5 shadow-md space-y-3"
-          >
-            <h3 className="text-3xl font-semibold capitalize dark:text-slate-200">
-              Send me a message
-            </h3>
-            <div>
-              <form
-                ref={formRef}
-                onSubmit={handleEmailSend}
-                className="space-y-3"
-              >
-                <div className="flex lg:flex-row flex-col items-center gap-5">
-                  <div className="w-full">
-                    <label className="mb-2 text-sm text-slate-900 dark:text-slate-200 font-medium block">
-                      Your Name*
-                    </label>
-                    <div className="relative flex items-center">
-                      <input
-                        type="text"
-                        name="user_name"
-                        placeholder="Enter name"
-                        required
-                        className="pr-4 dark:bg-slate-800 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900 dark:text-slate-200 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
-                      />
-
-                      <div className="absolute dark:text-slate-200 left-4">
-                        <FaUser />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <label className="mb-2 text-sm text-slate-900 dark:text-slate-200 font-medium block">
-                      Email Address*
-                    </label>
-                    <div className="relative flex items-center">
-                      <input
-                        type="text"
-                        name="user_email"
-                        required
-                        placeholder="Enter email address"
-                        className="pr-4 dark:bg-slate-800 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900 dark:text-slate-200 rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
-                      />
-
-                      <div className="absolute left-4 dark:text-slate-200">
-                        <MdEmail />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full">
-                  <label className="mb-2 text-sm text-slate-900 dark:text-slate-200 font-medium block">
-                    Subject*
-                  </label>
-                  <div className="relative flex items-center">
-                    <input
-                      type="text"
-                      name="title"
-                      required
-                      placeholder="What about this?"
-                      className="pr-4 dark:bg-slate-800 dark:text-slate-200 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900  rounded-xl bg-white shadow-xs border border-slate-300 w-full outline-none"
-                    />
-
-                    <div className="absolute left-4 dark:text-slate-200">
-                      <FaBookOpen />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="w-full">
-                  <label className="mb-2 text-sm text-slate-900 dark:text-slate-200 font-medium block">
-                    Message*
-                  </label>
-                  <div className="relative flex items-center">
-                    <textarea
-                      type="text"
-                      name="message"
-                      required
-                      placeholder="Describe your message"
-                      className="pr-4 dark:bg-slate-800 dark:border-none pl-10 lg:pl-12 py-3 text-sm text-slate-900 dark:text-slate-200 rounded-xl bg-white  shadow-xs border border-slate-300 w-full outline-none resize-none h-[200px]"
-                    />
-
-                    <div className="absolute left-4 top-4 dark:text-slate-200">
-                      <FaMessage />
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full text-center">
-                  <button
-                    type="submit"
-                    disabled={isPending}
-                    className={`relative inline-block px-4 py-2 font-medium group ${
-                      isPending ? "cursor-no-drop" : ""
-                    }`}
-                  >
-                    <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-sky-500 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                    <span className="absolute inset-0 w-full h-full bg-white border-2 border-sky-500 group-hover:bg-sky-500"></span>
-                    <span className="relative text-black group-hover:text-white">
-                      {isPending ? (
-                        <div>
-                          <span className="loading loading-spinner loading-md mr-2"></span>
-                          Sending...
-                        </div>
-                      ) : (
-                        "Send Message"
-                      )}
-                    </span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </Element>
-    </>
-  );
+// Animation variants
+const slideFromLeft = {
+  initial: { opacity: 0, x: -50 },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.5 } }
 };
 
-export default Contact;
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    title: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("idle");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.title || !formData.message) {
+      toast.error("Please fill all required fields");
+      return;
+    }
+
+    setStatus("loading");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7b8df874-281c-47f8-bb32-95f6a3baf6e9",
+          name: formData.name,
+          email: formData.email,
+          subject: formData.title,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", title: "", message: "" });
+        toast.success("Message sent successfully! 🎉");
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setStatus("error");
+      toast.error("Failed to send message. Please try again! ❌");
+    }
+  };
+
+  const InputField = ({ id, name, value, onChange, placeholder, required, icon: Icon, type = "text" }) => (
+    <div className="relative">
+      <input
+        type={type}
+        id={id}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        required={required}
+        className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-none dark:bg-slate-800 dark:text-slate-200 outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+        aria-describedby={`${id}-help`}
+      />
+      <div className="absolute left-4 top-3.5 text-slate-500 dark:text-slate-400">
+        <Icon aria-hidden="true" />
+      </div>
+    </div>
+  );
+
+  const TextareaField = ({ id, name, value, onChange, placeholder, required, icon: Icon }) => (
+    <div className="relative">
+      <textarea
+        id={id}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        rows={6}
+        required={required}
+        className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-none dark:bg-slate-800 dark:text-slate-200 outline-none resize-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+        aria-describedby={`${id}-help`}
+      ></textarea>
+      <div className="absolute left-4 top-4 text-slate-500 dark:text-slate-400">
+        <Icon aria-hidden="true" />
+      </div>
+    </div>
+  );
+
+  return (
+    <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <Title title={"Get In Touch"} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Left side with contact info and animation */}
+        <div className="space-y-6 bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg dark:text-slate-200 flex flex-col">
+          <motion.div
+            className="space-y-8"
+            variants={slideFromLeft}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <motion.div variants={fadeInUp}>
+              <h2 className="text-2xl font-semibold mb-4">Get in Touch 🤝</h2>
+              <p className="text-slate-600 dark:text-slate-300">
+                I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your visions.
+              </p>
+            </motion.div>
+
+            <div className="space-y-4">
+              <motion.div
+                className="flex items-center gap-4"
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FaEnvelope className="h-6 w-6 text-sky-500" />
+                <div>
+                  <h3 className="font-semibold">Email</h3>
+                  <a href="mailto:zubaerislam703@gmail.com" className="text-slate-600 dark:text-slate-300 hover:text-sky-500 transition-colors">
+                    zubaerislam703@gmail.com
+                  </a>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="flex items-center gap-4"
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FaPhone className="h-6 w-6 text-sky-500" />
+                <div>
+                  <h3 className="font-semibold">Phone</h3>
+                  <a href="tel:+8801560047265" className="text-slate-600 dark:text-slate-300 hover:text-sky-500 transition-colors">
+                    +880 15600 47265
+                  </a>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="flex items-center gap-4"
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FaMapMarkerAlt className="h-6 w-6 text-sky-500" />
+                <div>
+                  <h3 className="font-semibold">Location</h3>
+                  <p className="text-slate-600 dark:text-slate-300">Dhaka, Bangladesh</p>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+
+          <div className="w-full max-w-md mx-auto mt-auto">
+            <Lottie 
+              animationData={contactAnimation} 
+              loop={true} 
+              aria-hidden="true"
+              className="h-64 md:h-80"
+            />
+          </div>
+        </div>
+
+        {/* Right side contact form (unchanged) */}
+        {/* Right side contact form */}
+        <div className="bg-white border border-slate-300 glass rounded-xl p-6 shadow-md dark:bg-slate-900 dark:border-none dark:text-slate-200">
+          <h3 className="text-3xl font-semibold mb-5">Send me a message</h3>
+          <form onSubmit={handleSubmit} className="space-y-5">
+            {/* Name */}
+            <div>
+              <label
+                htmlFor="name"
+                className="block mb-2 font-medium text-slate-900 dark:text-slate-200"
+              >
+                Your Name*
+              </label>
+              <div className="relative">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name"
+                  required
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-none dark:bg-slate-800 dark:text-slate-200 outline-none"
+                />
+                <div className="absolute left-4 top-3 text-slate-500 dark:text-slate-400">
+                  <FaUser />
+                </div>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div>
+              <label
+                htmlFor="email"
+                className="block mb-2 font-medium text-slate-900 dark:text-slate-200"
+              >
+                Email Address*
+              </label>
+              <div className="relative">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email"
+                  required
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-none dark:bg-slate-800 dark:text-slate-200 outline-none"
+                />
+                <div className="absolute left-4 top-3 text-slate-500 dark:text-slate-400">
+                  <MdEmail />
+                </div>
+              </div>
+            </div>
+
+            {/* Subject */}
+            <div>
+              <label
+                htmlFor="title"
+                className="block mb-2 font-medium text-slate-900 dark:text-slate-200"
+              >
+                Subject*
+              </label>
+              <div className="relative">
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  value={formData.title}
+                  onChange={handleChange}
+                  placeholder="What about this?"
+                  required
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-none dark:bg-slate-800 dark:text-slate-200 outline-none"
+                />
+                <div className="absolute left-4 top-3 text-slate-500 dark:text-slate-400">
+                  <FaBookOpen />
+                </div>
+              </div>
+            </div>
+
+            {/* Message */}
+            <div>
+              <label
+                htmlFor="message"
+                className="block mb-2 font-medium text-slate-900 dark:text-slate-200"
+              >
+                Message*
+              </label>
+              <div className="relative">
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Describe your message"
+                  rows={6}
+                  required
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-slate-300 dark:border-none dark:bg-slate-800 dark:text-slate-200 outline-none resize-none"
+                ></textarea>
+                <div className="absolute left-4 top-4 text-slate-500 dark:text-slate-400">
+                  <MdMessage />
+                </div>
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <div className="text-center">
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className={`relative inline-block px-6 py-3 font-medium rounded-xl overflow-hidden
+                  ${
+                    status === "loading"
+                      ? "cursor-not-allowed bg-sky-400"
+                      : "bg-sky-600 hover:bg-sky-700"
+                  }
+                  text-white transition duration-300`}
+              >
+                {status === "loading" ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <span className="loading loading-spinner loading-md"></span>
+                    Sending...
+                  </span>
+                ) : (
+                  "Send Message"
+                )}
+              </button>
+            </div>
+
+            {/* Status messages */}
+            {status === "success" && (
+              <p className="text-green-500 text-center font-semibold mt-2">
+                Message sent successfully! ✅
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-red-500 text-center font-semibold mt-2">
+                Failed to send message. Please try again! ❌
+              </p>
+            )}
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+}

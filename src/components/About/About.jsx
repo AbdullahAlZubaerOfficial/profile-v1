@@ -21,16 +21,16 @@ import github from "../../assets/icons/github.png";
 const About = () => {
   const code = `
     const developer = {
-        name: "Tahmid Alam",
+        name: "Abdullah Al Zubaer",
         stack: "MERN,
-        location: "Rangpur, BD"
+        location: "Dhaka, BD"
         traits: ["Lifelong Learner", 
                  "Creative Thinker",
                  "Adaptable"]
     }`;
   return (
     <>
-      <Element name="about" className="element">
+      <Element name="about" className="element mt-16">
         <Title title={"About Me"} />
 
         <div className="my-15 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -46,7 +46,7 @@ const About = () => {
                 alt="tahmidImage"
               />
               <div>
-                <h4 className="font-bold">Tahmid Alam</h4>
+                <h4 className="font-bold"> Abdullah Al Zubaer</h4>
                 <p className="text-sm font-semibold">Fullstack Developer</p>
               </div>
             </div>
@@ -90,7 +90,7 @@ const About = () => {
             >
               <h2 className="text-3xl font-semibold">What Drives Me</h2>
               <p className="text-base">
-                Hello! I’m Md Tahmid Alam, a MERN stack web developer from
+                Hello! I’m Abdullah Al Zubaer, a MERN stack web developer from
                 Rangpur, Bangladesh. My journey began with a deep curiosity
                 about how things work on the web, which soon turned into a drive
                 to build meaningful, user-friendly digital experiences. I enjoy

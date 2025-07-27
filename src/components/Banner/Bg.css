@@ -1,0 +1,6 @@
+.bordergenerate{
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    background-color: rgba(213,220,232,0.91);
+}
