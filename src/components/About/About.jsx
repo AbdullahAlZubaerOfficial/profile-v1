@@ -93,7 +93,7 @@ const About = () => {
               <h2 className="text-3xl font-semibold">What Drives Me</h2>
               <p className="text-base">
                 Hello! I’m Abdullah Al Zubaer, a MERN stack web developer from
-                Rangpur, Bangladesh. My journey began with a deep curiosity
+                Dhaka, Bangladesh. My journey began with a deep curiosity
                 about how things work on the web, which soon turned into a drive
                 to build meaningful, user-friendly digital experiences. I enjoy
                 solving problems through clean code and intuitive UI design.
@@ -280,7 +280,7 @@ const About = () => {
               <Button
                 text={"Resume"}
                 link={
-                  "https://drive.google.com/file/d/11kl6mpE5n_gmRw5gJ3XboFbQLAYjG_un/view?usp=sharing"
+                  "https://drive.google.com/file/d/1Js9YQXkbE_mZe5aPkcWSCRAOPEVCpkrW/view"
                 }
                 target={"_blank"}
               />
