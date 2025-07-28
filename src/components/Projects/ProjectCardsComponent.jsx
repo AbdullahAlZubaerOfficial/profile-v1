@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import { projects } from "../../../src/components/projects";
+// import Projects from "./Projects";
+import { projects } from "../Projects";
+// import { projects } from "../Projects";
+// import { projects } from "../../../src/components/project";
 
 function ProjectCardsComponent() {
   const categories = ["all", ...new Set(projects.map((project) => project.category))];
