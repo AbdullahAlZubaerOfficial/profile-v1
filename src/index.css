@@ -21,13 +21,13 @@
 }
 
 body {
-  /* Tailwind apply bg-gradient */
-  @apply bg-gradient-to-br from-sky-50 to-sky-100;
+  @apply bg-gradient-to-br from-sky-50 to-sky-100 text-black; /* Light mode text black */
 }
 
 .dark body {
-  @apply bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800;
+  @apply bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 text-white; /* Dark mode text white */
 }
+
 
 .active {
   color: black;
