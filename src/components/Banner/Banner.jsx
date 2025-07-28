@@ -128,10 +128,11 @@ const Banner = () => {
               <span className="text-[#1877F2] text-xl lg:text-2xl">
                 <Typewriter
                   words={[
-                    "A Front-End Developer",
-                     "MERN Stack Developer",
+                    "Full Stack Developer",
+                     
                        "Competetive Programmer",
                     "Web Developer",
+                   "Mern Stack"
                    
                   
                   ]}
