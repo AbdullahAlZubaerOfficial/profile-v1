@@ -129,8 +129,11 @@ const Banner = () => {
                 <Typewriter
                   words={[
                     "A Front-End Developer",
+                     "MERN Stack Developer",
+                       "Competetive Programmer",
                     "Web Developer",
-                    "MERN Stack Developer",
+                   
+                  
                   ]}
                   loop={true}
                   cursor
@@ -227,7 +230,7 @@ const Banner = () => {
           {stats.map((item, index) => (
             <motion.div
               key={index}
-              className="text-center p-6 lg:pt-10 lg:pb-10"
+              className="text-center p-6 lg:pt-10 lg:pb-10 text-green-900"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -236,7 +239,7 @@ const Banner = () => {
                 src={item.icon}
                 alt={item.text}
               />
-              <span className="text-3xl lg:text-4xl font-bold mb-3 block text-gray-900 dark:text-white">
+              <span className="text-3xl lg:text-4xl font-bold mb-3 block text-gray-900 dark:text">
                 <CountUp
                   end={item.num}
                   duration={16}

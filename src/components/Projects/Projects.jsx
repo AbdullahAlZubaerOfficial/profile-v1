@@ -3,7 +3,7 @@ import ProjectCardsComponent from "./ProjectCardsComponent";
 
 function Projects() {
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
+    <section id="projects" className="py-20 mt-10 bg-white dark:bg-gray-900">
       <div className="container px-4 mx-auto">
         <div className="md:mb-16 mb-5 text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 text-gray-900 dark:text-white">

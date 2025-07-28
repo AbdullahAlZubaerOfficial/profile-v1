@@ -51,11 +51,11 @@ const About = () => {
               </div>
             </div>
             <div className="space-y-3 dark:text-slate-200">
-              <h2 className="text-[28px] lg:text-3xl font-semibold leading-8 md:leading-10 lg:lea">
+              <h2 className="text-[28px] lg:text-3xl font-semibold leading-8 md:leading text-slate-600 lg:lea">
                 <span className="text-sky-500">Passionate</span> <br />
                 Developer and <br /> Lifelong Learner
               </h2>
-              <p className="text-base">
+              <p className="text-base text-black font-bold">
                 Driven MERN stack developer with a focus on building efficient,
                 scalable websites. I thrive on solving real-world challenges
                 through clean code and intuitive design.
@@ -110,7 +110,7 @@ const About = () => {
             data-aos-duration="1000"
             className="lg:col-span-2 rounded-xl glass p-3 lg:p-5 shadow-md space-y-3"
           >
-            <h2 className="text-3xl font-semibold dark:text-slate-200">
+            <h2 className="text-3xl font-semibold text-slate-800 font-bold">
               My Tech Stack
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 2xl:grid-cols-8 gap-3 lg:gap-3">
