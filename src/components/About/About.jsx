@@ -77,11 +77,13 @@ const About = () => {
                 <div className="h-3 w-3 rounded-full mr-2 bg-yellow-500"></div>
                 <div className="h-3 w-3 rounded-full bg-green-500"></div>
               </div>
-              <div>
-                <pre className="text-sm">
-                  <code>{code}</code>
-                </pre>
-              </div>
+             <div className="overflow-x-auto">
+  <pre className="text-xs sm:text-sm p-2 sm:p-4 bg-gray-100 dark:bg-gray-800 rounded-lg whitespace-pre-wrap break-words">
+    <code className="font-mono text-gray-800 dark:text-gray-200">
+      {code}
+    </code>
+  </pre>
+</div>
             </div>
             <div
               data-aos="zoom-in"

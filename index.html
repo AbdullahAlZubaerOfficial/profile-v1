@@ -2,13 +2,46 @@
 <html lang="en" id="html" data-theme="light" class="light">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdullah Al Zubaer </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Abdullah Al Zubaer's portfolio website showcasing projects and skills" />
+    <meta name="keywords" content="portfolio, web development, Abdullah Al Zubaer" />
+    <meta name="author" content="Abdullah Al Zubaer" />
+    <title>Abdullah Al Zubaer | Portfolio</title>
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Abdullah Al Zubaer | Portfolio" />
+    <meta property="og:description" content="Professional portfolio showcasing my projects and skills" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:image" content="/preview-image.jpg" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Fallback for browsers without JavaScript -->
+    <noscript>
+      <style>
+        #root { display: none; }
+        .nojs-message {
+          display: block;
+          text-align: center;
+          padding: 2rem;
+          font-family: sans-serif;
+        }
+      </style>
+      <div class="nojs-message">
+        <h1>JavaScript is required to run this application</h1>
+        <p>Please enable JavaScript in your browser settings to continue.</p>
+      </div>
+    </noscript>
   </body>
 </html>

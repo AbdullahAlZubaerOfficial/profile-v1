@@ -18,7 +18,6 @@ import image from "/perfect2.png";
 const RotatingCircle = () => {
   return (
     <div className="relative inline-block">
-      {/* Rotating green circle strictly image size er sathe match korbe */}
       <motion.div
         style={{ borderTopColor: "transparent", borderBottomColor: "transparent" }}
         className="absolute inset-0 rounded-full border-4 border-green-500"
@@ -29,7 +28,6 @@ const RotatingCircle = () => {
           ease: "linear",
         }}
       />
-      {/* Profile image */}
       <img
         src={image}
         alt="Profile"
@@ -51,7 +49,6 @@ const Banner = () => {
     { num: 0, text: "Awards", icon: award },
   ];
 
-  // const circleColors = ["#00ff99", "#00ff9980"];
   const circleVariants = {
     initial: {
       strokeDasharray: "24 10 0 0",
@@ -85,34 +82,27 @@ const Banner = () => {
   return (
     <Element name="home" className="element">
       <div className="relative overflow-hidden">
-        {/* Animated Background Circles */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-         
-            <motion.svg
-             
-              width="100%"
-              height="100%"
-              viewBox="0 0 100 100"
-              className="absolute top-0 left-0"
-              initial="initial"
-              animate="animate"
-           
-              variants={circleVariants}
-            >
-              <motion.circle
-                cx="50"
-                cy="50"
-                r="40"
-               
-                strokeWidth="0.5"
-                fill="none"
-              />
-            </motion.svg>
-      
+          <motion.svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 100"
+            className="absolute top-0 left-0"
+            initial="initial"
+            animate="animate"
+            variants={circleVariants}
+          >
+            <motion.circle
+              cx="50"
+              cy="50"
+              r="40"
+              strokeWidth="0.5"
+              fill="none"
+            />
+          </motion.svg>
         </div>
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 lg:ml-10 space-y-10 lg:space-y-0 lg:gap-20">
-          {/* Profile Image with rotating green circle */}
           <Tilt scale={1.1} transitionSpeed={2500}>
             <motion.div
               data-aos="fade-right"
@@ -125,16 +115,15 @@ const Banner = () => {
             </motion.div>
           </Tilt>
 
-          {/* Profile Content */}
           <motion.div
             data-aos="fade-left"
             data-aos-duration="1000"
-            className="col-span-2 space-y-5 md:pr-10 flex flex-col justify-center dark:text-slate-100 relative z-10"
+            className="col-span-2 space-y-5 md:pr-10 flex flex-col justify-center text-gray-800 dark:text-slate-100 relative z-10"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-2xl lg:text-5xl font-extrabold">
+            <h1 className="text-2xl lg:text-5xl font-extrabold text-gray-900 dark:text-white">
               I'm Abdullah Al Zubaer <br />
               <span className="text-[#1877F2] text-xl lg:text-2xl">
                 <Typewriter
@@ -153,7 +142,7 @@ const Banner = () => {
               </span>
             </h1>
 
-            <p className="text-base lg:text-lg lg:w-5/6">
+            <p className="text-base lg:text-lg lg:w-5/6 text-gray-700 dark:text-gray-300">
               Experienced MERN stack developer skilled in Tailwind, JavaScript,
               ES6, React.js, React Router, Next.js, Node.js, Express.js, and
               MongoDB. With a blend of creativity and technical expertise, I
@@ -210,7 +199,7 @@ const Banner = () => {
                 />
               </motion.a>
               <motion.button
-                className="btn btn-primary hover:scale-105 transition-transform"
+                className="btn btn-primary hover:scale-105 transition-transform text-white"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -218,7 +207,7 @@ const Banner = () => {
                   href="https://drive.google.com/file/d/1X3XvQzSnZC53CANg2Klso3e-Fmha56hm/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 text-blue-400"
                 >
                   Download CV <FaDownload />
                 </a>
@@ -227,11 +216,10 @@ const Banner = () => {
           </motion.div>
         </div>
 
-        {/* Stats Section */}
         <motion.div
           data-aos="zoom-in"
           data-aos-duration="1000"
-          className="lg:h-[150px] p-3 lg:p-0 mt-4 lg:mt-4 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap dark:text-slate-200 relative z-10"
+          className="lg:h-[150px] p-3 lg:p-0 mt-4 lg:mt-4 glass rounded-xl flex items-center justify-center lg:justify-around lg:flex-nowrap flex-wrap text-gray-800 dark:text-slate-200 relative z-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -244,11 +232,11 @@ const Banner = () => {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <img
-                className="w-[50px] sm:w-[55px] mx-auto mb-2 "
+                className="w-[50px] sm:w-[55px] mx-auto mb-2"
                 src={item.icon}
                 alt={item.text}
               />
-              <span className="text-3xl lg:text-4xl font-bold mb-3 block">
+              <span className="text-3xl lg:text-4xl font-bold mb-3 block text-gray-900 dark:text-white">
                 <CountUp
                   end={item.num}
                   duration={16}

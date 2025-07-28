@@ -3,9 +3,10 @@ import { Card, CardContent, CardFooter } from "../ui/card";
 import { Button } from "../ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "../ui/badge";
-import { Modal, ModalBody, ModalHeader, ModalTitle } from "../../components/Modal";
+import { Modal, ModalBody, ModalFooter, ModalHeader, ModalTitle } from "../../components/Modal";
 
 function ProjectCard({ project }) {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -45,34 +46,46 @@ function ProjectCard({ project }) {
           />
         </div>
 
-        <CardContent className="flex-grow pt-6 px-6">
-          <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{project.name}</h3>
-          <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-            {project.description.length > 100 
-              ? `${project.description.slice(0, 100)}...` 
-              : project.description}
-            {project.description?.length > 100 && (
-              <Button
-                variant="link"
-                className="px-0 h-auto font-medium text-primary hover:text-primary/80 dark:text-blue-400 dark:hover:text-blue-300"
-                onClick={() => setIsModalOpen(true)}
-              >
-                Read more
-              </Button>
-            )}
-          </p>
-          <div className="flex flex-wrap gap-2 mt-4">
-            {project.tags.map((tag) => (
-              <Badge 
-                key={tag} 
-                variant="secondary" 
-                className="font-normal bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </CardContent>
+     <CardContent className="flex-grow pt-6 px-6">
+        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{project.name}</h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+          {project.description.length > 100
+            ? `${project.description.slice(0, 100)}...`
+            : project.description}
+          {project.description?.length > 100 && (
+            <Button
+              variant="link"
+              className="px-0 h-auto font-medium text-primary hover:text-primary/80 dark:text-blue-400 dark:hover:text-blue-300"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Read more
+            </Button>
+          )}
+        </p>
+        <div className="flex flex-wrap gap-2 mt-4">
+          {project.tags.map((tag) => (
+            <Badge
+              key={tag}
+              variant="secondary"
+              className="font-normal bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+            >
+              {tag}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title={project.name}>
+        <ModalHeader>
+          <ModalTitle>{project.name}</ModalTitle>
+        </ModalHeader>
+        <ModalBody>
+          <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+        </ModalBody>
+        <ModalFooter>
+          <Button onClick={() => setIsModalOpen(false)}>Close</Button>
+        </ModalFooter>
+      </Modal>
 
      <CardFooter
   className={`border-t border-gray-200 dark:border-gray-700 pt-4 px-6 pb-6 flex justify-between ${!project?.clientRepo && !project?.serverRepo ? "md:hidden" : ""}`}

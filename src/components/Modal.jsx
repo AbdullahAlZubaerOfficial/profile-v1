@@ -1,4 +1,3 @@
-// Modal.jsx - React.js compatible version (no TypeScript)
 "use client";
 
 import React, { useEffect, useRef } from "react";
@@ -60,7 +59,8 @@ export function Modal({ isOpen, onClose, children, className, title }) {
       <div
         ref={modalRef}
         className={cn(
-          "rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto relative animate-in fade-in-0 zoom-in-95 duration-200",
+          "rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-y-auto relative animate-in fade-in-0 zoom-in-95 duration-200 bg-white dark:bg-gray-800",
+          "mx-2 sm:mx-4", // Add responsive horizontal margins
           className
         )}
       >
@@ -79,17 +79,17 @@ export function Modal({ isOpen, onClose, children, className, title }) {
 }
 
 export function ModalHeader({ className, ...props }) {
-  return <div className={cn("px-6 py-4 border-b", className)} {...props} />;
+  return <div className={cn("px-4 sm:px-6 py-4 border-b", className)} {...props} />;
 }
 
 export function ModalTitle({ className, ...props }) {
-  return <h2 id="modal-title" className={cn("text-2xl font-bold", className)} {...props} />;
+  return <h2 id="modal-title" className={cn("text-xl sm:text-2xl font-bold", className)} {...props} />;
 }
 
 export function ModalBody({ className, ...props }) {
-  return <div className={cn("px-6 py-4", className)} {...props} />;
+  return <div className={cn("px-4 sm:px-6 py-4", className)} {...props} />;
 }
 
 export function ModalFooter({ className, ...props }) {
-  return <div className={cn("px-6 py-4 border-t flex justify-end gap-2", className)} {...props} />;
+  return <div className={cn("px-4 sm:px-6 py-4 border-t flex justify-end gap-2", className)} {...props} />;
 }

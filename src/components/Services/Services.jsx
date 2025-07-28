@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 const Services = () => {
   return (
     <>
-      <Element name="services" className="element">
+      <Element name="services" className="element mt-16">
         <Title title={"Services"} />
         <div className="my-15 flex items-center lg:flex-row lg:flex-nowrap justify-center flex-wrap gap-3 lg:gap-6">
           {serviceData?.map((service, index) => {
