@@ -72,7 +72,7 @@ const Banner = () => {
         },
         opacity: {
           duration: 0.1,
-          delay: 0.5 + index * 0.1,
+          delay: 1 + index * 0.1,
           ease: "easeIn",
         },
       },
