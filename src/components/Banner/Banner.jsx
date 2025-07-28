@@ -128,11 +128,13 @@ const Banner = () => {
               <span className="text-[#1877F2] text-xl lg:text-2xl">
                 <Typewriter
                   words={[
-                    "Full Stack Developer",
-                     
+                    
+                     "A Frontend-Developer",
+                      "Mern Stack Developer",
                        "Competetive Programmer",
                     "Web Developer",
-                   "Mern Stack"
+                  
+                   "Full Stack Developer",
                    
                   
                   ]}
@@ -153,6 +155,7 @@ const Banner = () => {
               bring websites to life by transforming ideas into responsive and
               dynamic web applications.
             </p>
+            <p className="font-bold"> <a href="https://codeforces.com/profile/zubaerislam703" className="text-blue-500 underline"  >Codeforces</a> : Rating (982)</p>
             <div className="flex items-center gap-4">
               <motion.a
                 href="https://www.facebook.com/abdullahal.zubaer.507/"
