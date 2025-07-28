@@ -43,7 +43,7 @@ const Banner = () => {
   }, []);
 
   const stats = [
-    { num: 0.5, text: "Years of experience", icon: calander },
+    { num: 1, text: "Years of experience", icon: calander },
     { num: 60, text: "Completed projects", icon: project },
     { num: 10, text: "Happy clients", icon: client },
     { num: 0, text: "Awards", icon: award },
