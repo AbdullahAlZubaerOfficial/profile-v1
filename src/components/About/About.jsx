@@ -280,7 +280,7 @@ const About = () => {
               <Button
                 text={"Resume"}
                 link={
-                  "https://drive.google.com/file/d/1Js9YQXkbE_mZe5aPkcWSCRAOPEVCpkrW/view"
+                  "https://drive.google.com/file/d/1q79lzzkeL7wxiYh5PbzHU5bLWBe0PqRB/view"
                 }
                 target={"_blank"}
               />

@@ -211,7 +211,7 @@ const Banner = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <a
-                  href="https://drive.google.com/file/d/1Js9YQXkbE_mZe5aPkcWSCRAOPEVCpkrW/view"
+                  href="https://drive.google.com/file/d/1q79lzzkeL7wxiYh5PbzHU5bLWBe0PqRB/view"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-2 text-blue-400"
